@@ -3,7 +3,9 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-    Home care website
+      <div className="container">
+        Home care website
+    </div>
     </div>
   );
 }

@@ -1,7 +1,14 @@
 @import 'media-quries.scss';
 @import 'mixins';
 @import 'variables';
+@import 'fonts';
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
+}
+
+.container {
+    @include mobile {
+        max-width: 100%;
+    }
 }

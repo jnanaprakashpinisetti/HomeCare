@@ -1,0 +1,21 @@
+body {
+    font-family: $roboto;
+}
+
+.container {
+    @include mobile {
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 0;
+    }
+}
+
+.sec-bg {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 0;
+    background-color: $white;
+    border-bottom: 1px solid #E6E6E6;
+}

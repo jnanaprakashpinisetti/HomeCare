@@ -1,0 +1,27 @@
+.card {
+    border-radius: 10px;
+    background-color: $yash;
+    text-align: center;
+
+    img {
+        width: 100%;
+        max-width: 100px;
+    }
+
+    .card-body {
+        background-color: $white;
+
+        p {
+            max-height: 150px;
+            overflow: hidden;
+            margin-bottom: 0
+        }
+
+    }
+
+    .btn-wrapper {
+        margin: 15px auto;
+    }
+
+
+}

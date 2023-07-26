@@ -1,5 +1,5 @@
 import React from 'react';
-import Typography from '../Elements/Typography';
+import Typography from './Typography';
 
 export default function Elements() {
     return (

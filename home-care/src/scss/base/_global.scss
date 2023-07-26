@@ -19,3 +19,39 @@ body {
     background-color: $white;
     border-bottom: 1px solid #E6E6E6;
 }
+
+.section-heading {
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: max-content;
+    margin: 0 auto 40px;
+    font-family: $roboto-bl;
+
+    &::before {
+        content: "";
+        height: 2px;
+        width: 75px;
+        transition: all 1s;
+        background-color: $yellow;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &:hover {
+        &::before {
+            width: 100%;
+            transition: all 1s
+        }
+    }
+}
+
+.blue {
+    color: $blue;
+}
+
+.yellow {
+    color: $yellow
+}

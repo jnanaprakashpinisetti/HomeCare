@@ -4,6 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Carousal from './components/Carousal';
+import Card from './components/Card'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
       </BrowserRouter>
       <Carousal />
+      <Card/>
       <Footer />
     </>
   );

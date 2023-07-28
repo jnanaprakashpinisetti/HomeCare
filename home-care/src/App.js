@@ -4,7 +4,8 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Carousal from './components/Carousal';
-import Card from './components/Card'
+import Card from './components/Card';
+import Choose from './components/Choose';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       </BrowserRouter>
       <Carousal />
       <Card/>
+      <Choose/>
       <Footer />
     </>
   );

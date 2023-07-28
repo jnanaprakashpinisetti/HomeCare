@@ -1,0 +1,38 @@
+.choose-wrap {
+    background-color: $light-blue;
+    padding: 50px 25px;
+    margin-bottom: 75px;
+
+    @include mobile {
+        padding: 30px 15px;
+        margin-bottom: 30px
+    }
+
+    .container {
+        margin-bottom: 0
+    }
+
+    img {
+        max-width: 100px;
+        margin: auto
+    }
+
+    .col-md-6 {
+        display: flex;
+
+        @include mobile {
+            display: block
+        }
+    }
+
+    .img-wrap {
+        text-align: center;
+    }
+
+    .info-wrap {
+        @include desktop {
+
+            padding-left: 20px
+        }
+    }
+}

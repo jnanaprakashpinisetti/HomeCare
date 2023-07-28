@@ -4,12 +4,16 @@ body {
 }
 
 .container {
+    margin-bottom: 75px;
+
     @include mobile {
+        margin-bottom: 30px;
         max-width: 100%;
     }
 
     .container {
         padding: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -46,6 +50,21 @@ body {
             width: 100%;
             transition: all 1s
         }
+    }
+}
+
+.light-blue {
+    background-color: $light-blue;
+    padding: 50px 25px;
+    margin-bottom: 75px;
+
+    @include mobile {
+        padding: 30px 15px;
+        margin-bottom: 30px
+    }
+
+    .container {
+        margin-bottom: 0
     }
 }
 

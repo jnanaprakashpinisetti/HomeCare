@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import cardData from '../assets/data/card.json';
 
 import babyCareIcon from '../images/icons/baby-care.svg';
 import oldAgeCareIcon from '../images/icons/old-age-care.svg';
@@ -10,12 +9,12 @@ export default function Card() {
 
   return (
   <>
-  <div>
-    <h1 className="section-heading">
+  <div className="section-heading">
+    <h1 >
     <span className="blue">our</span> <span className="yellow">services</span>
     </h1>
   </div>
-    <div className="container">
+    <div className="container card-wrapper">
       <div className="row">
       
       {/* First Card */}

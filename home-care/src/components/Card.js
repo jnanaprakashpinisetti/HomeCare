@@ -8,13 +8,13 @@ import physiotherapyIcon from '../images/icons/physiotherapy.svg';
 export default function Card() {
 
   return (
-  <>
+  <section>
   <div className="section-heading">
     <h1 >
     <span className="blue">our</span> <span className="yellow">services</span>
     </h1>
   </div>
-    <div className="container card-wrapper">
+    <div className="container ">
       <div className="row">
       
       {/* First Card */}
@@ -86,7 +86,7 @@ export default function Card() {
 
       </div>
     </div>
-    </>
+    </section>
 
   )
 }

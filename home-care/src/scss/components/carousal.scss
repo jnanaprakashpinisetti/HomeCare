@@ -1,5 +1,8 @@
 .carousel {
-    margin-bottom: 50px
+    margin-bottom: 75px;
+    @include mobile {
+        margin-bottom: 30px;
+    }
 }
 
 .carousel-item {

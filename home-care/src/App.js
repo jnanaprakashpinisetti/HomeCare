@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Carousal from './components/Carousal';
 import Card from './components/Card';
 import Choose from './components/Choose';
+import HowToProcess from './components/HowToProcess';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Carousal />
       <Card/>
       <Choose/>
+      <HowToProcess/>
       <Footer />
     </>
   );

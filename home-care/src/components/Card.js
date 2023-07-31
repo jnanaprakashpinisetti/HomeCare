@@ -8,7 +8,7 @@ import physiotherapyIcon from '../images/icons/physiotherapy.svg';
 export default function Card() {
 
   return (
-  <section>
+  <section className="home-cards">
   <div className="section-heading">
     <h1 >
     <span className="blue">our</span> <span className="yellow">services</span>
@@ -18,7 +18,7 @@ export default function Card() {
       <div className="row">
       
       {/* First Card */}
-        <div className="col-md-3" >
+        <div className="col-md-4" >
           <div className="card " >
             <div className="img-wrapper">
               <img src={babyCareIcon} alt="baby care"/>
@@ -34,7 +34,7 @@ export default function Card() {
         </div>
 
       {/* Second Card */}
-        <div className="col-md-3" >
+        <div className="col-md-4" >
           <div className="card " >
             <div className="img-wrapper">
               <img src={oldAgeCareIcon} alt="Old Age Care"/>
@@ -50,7 +50,7 @@ export default function Card() {
         </div>
 
       {/* Third Card */}
-        <div className="col-md-3" >
+        <div className="col-md-4" >
           <div className="card " >
             <div className="img-wrapper">
               <img src={cookIcon} alt="cook / maid"/>
@@ -66,7 +66,7 @@ export default function Card() {
         </div>
 
       {/* Fourth Card */}
-        <div className="col-md-3" >
+        {/* <div className="col-md-3" >
           <div className="card " >
             <div className="img-wrapper">
               <img src={physiotherapyIcon} alt="Physiotherapy"/>
@@ -79,7 +79,7 @@ export default function Card() {
               <a href="#" className="btn btn-primary">See More</a>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
 

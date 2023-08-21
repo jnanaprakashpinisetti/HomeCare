@@ -16,9 +16,9 @@ export default function Navbar() {
 
 			<header className="navbar-bg 	 scroll-change">
 				<nav className="navbar navbar-expand-md container">
-					{/* <a className="navbar-brand" href="#"> */}
-						<NavLink to='/'><img src={log} alt="SSP Logo" width="50px" /></NavLink>
-					{/* </a> */}
+					<a className="navbar-brand">
+					<NavLink to='/'><img src={log} alt="SSP Logo" width="50px" /></NavLink>
+					</a>
 					<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 						<i className={isActive ? "fa fa-close" : "fa fa-bars"} onClick={toggleClass} ></i>
 					</button>

@@ -8,6 +8,10 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/js/bootstrap.bundle.js'
 import './index.scss';
 import App from './App';
+// Default V2 theme
+import 'survey-core/defaultV2.min.css';
+// Modern theme
+// import 'survey-core/modern.min.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

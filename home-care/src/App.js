@@ -7,6 +7,7 @@ import Carousal from './components/Carousal';
 import Card from './components/Card';
 import Choose from './components/Choose';
 import HowToProcess from './components/HowToProcess';
+import SendMessage from './components/SendMessage';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Card/>
       <Choose/>
       <HowToProcess/>
+      <SendMessage/>
       <Footer />
     </>
   );

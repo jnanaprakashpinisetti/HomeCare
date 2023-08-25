@@ -1,8 +1,56 @@
 footer {
-    padding: 50px 25px;
-    margin-bottom: 0;
-    background: #CECECE;
-    
+    .footer-wrap {
+        padding: 50px 25px 25px 25px;
+        margin-bottom: 0;
+        background: #CECECE;
+        @include mobile {
+            padding: 30px 20px 10px 20px;
+        }
+    }
+
+    h5 {
+        margin-bottom: 15px;
+
+        @include mobile {
+            font-weight: bold;
+            color: $gray;
+        }
+    }
+
+    ul {
+        padding-left: 0;
+
+        li {
+            margin-bottom: 20px;
+            list-style: none;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+
+        a {
+            color: $brand-gray;
+
+            &:hover {
+                text-decoration: none;
+                color: $gray;
+
+                img {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    img {
+        margin-right: 10px;
+        width: 100%;
+        max-width: 25px;
+        opacity: 0.8;
+    }
+
 
     .navbar-bg {
         background-color: transparent;
@@ -15,6 +63,15 @@ footer {
     }
 
     .navbar {
+
+        .navbar-collapse.collapse {
+            display: block;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
         .navbar-nav {
             display: block
         }
@@ -31,27 +88,77 @@ footer {
             @include desktop {
                 display: block !important
             }
+
+            &::before {
+                display: none;
+            }
         }
 
         .nav-link {
-            padding: 10px !important;
+            padding: 5px 5px 5px 0 !important;
+            color: $brand-gray;
 
             &::before {
-                width: 75%;
-                background-color: $copy-gray;
+                display: none;
             }
 
             &.active {
-                color: $black;
+                color: $gray;
+                background: none;
             }
 
             &:hover {
-                color: $black;
-                &::before {
-                    width: 75%;
-                }
-
+                color: $gray;
             }
         }
+    }
+
+    .contact-us {
+        .call {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .address {
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+
+    .followus {
+
+        li {
+            display: flex;
+            align-items: center;
+        }
+
+
+
+    }
+
+    .col-md-2 {
+        @include mobile {
+            margin-bottom: 15px
+        }
+    }
+
+    .col-md-3 {
+        @include mobile {
+            margin-bottom: 15px
+        }
+    }
+
+    .copy-wright {
+
+        background-color: #918f8f;
+
+        p {
+            margin-bottom: 0;
+            text-align: center;
+            color: $gray;
+        }
+
+        padding: 15px;
+
     }
 }

@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import contactUs from '../images/img/contact-us.jpg'
 
 const EnquiryForm = () => {
+    const form = useRef();
+
+    const submitHandler = e => {
+        e.preventDefault();
+        emailjs.sendForm('service_91qxp92', 'template_62xk6sf', form.current, 'rZIjqFUg-qhiHTe32')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+    }
     return (
         <>
             <section className="enquiryForm">
@@ -13,18 +26,18 @@ const EnquiryForm = () => {
                             <img src={contactUs} alt="contact Us" />
                         </div>
                         <div className="col-md-8">
-                            <h1 class="section-heading"> <span class="blue">send your </span><span class="yellow">message to us</span></h1>
+                            <h1 className="section-heading"> <span className="blue">send your </span><span className="yellow">message to us</span></h1>
 
 
                             <div className="form-wrapper">
-                                <form action="" id='enquiryForm'>
+                                <form ref={form} onSubmit={submitHandler} id='enquiryForm'>
                                     {/* Blick-1 */}
                                     <div className="container">
                                         <div className="row">
                                             {/* First Name */}
                                             <div className="col-md-6 form-group">
                                                 <label htmlFor="firstName"><span>* </span>First Name :</label>
-                                                <input type="text" className='form-control' id='firstName' name='firstName' placeholder="Enter First Name" required='true' pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" />
+                                                <input type="text" className='form-control' id='firstName' name='firstName' placeholder="Enter First Name" required />
                                                 <span className='error' id='firstNameError'></span>
                                             </div>
                                             {/* Last Name */}
@@ -43,13 +56,13 @@ const EnquiryForm = () => {
                                             {/* Email */}
                                             <div className="col-md-6 form-group">
                                                 <label htmlFor="email"><span>* </span>Email Id :</label>
-                                                <input type="email" className='form-control' id='email' name='email' placeholder="sample@mail.com" required='true' />
+                                                <input type="email" className='form-control' id='email' name='email' placeholder="sample@mail.com" required />
                                                 <span className='error' id='emailError'></span>
                                             </div>
                                             {/* Mobile No */}
                                             <div className="col-md-6 form-group">
                                                 <label htmlFor="mobile"><span>* </span>Mobile No :</label>
-                                                <input type="number" className='form-control' id='mobile' name='mobile' placeholder="Enter Mobile No" required='true' pattern="^[6-9]\\d{9}$" max="10" />
+                                                <input type="number" className='form-control' id='mobile' name='mobile' placeholder="Enter Mobile No" required />
                                                 <span className='error' id='mobileError'></span>
                                             </div>
 
@@ -69,13 +82,38 @@ const EnquiryForm = () => {
                                         </div>
                                     </div>
                                     <div className="btn-wrap">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="submit" className="btn btn-primary" data-toggle="modal" data-target="#myModal" disabled>Submit</button>
                                     </div>
 
 
                                 </form>
 
                             </div>
+                        </div>
+                    </div>
+                </div>
+                {/* <!-- The Modal --> */}
+                <div className="modal fade" id="myModal">
+                    <div className="modal-dialog">
+                        <div className="modal-content">
+
+                            {/* <!-- Modal Header --> */}
+                            <div className="modal-header">
+
+                                {/* <button type="button" className="close" data-dismiss="modal">&times;</button> */}
+                            </div>
+
+                            {/* <!-- Modal body --> */}
+                            <div className="modal-body">
+                                <h3 className="modal-title">Thank You!</h3>
+                                <p> We have received your message and will be in touch shortly</p>
+                            </div>
+
+                            {/* <!-- Modal footer --> */}
+                            <div className="modal-footer">
+                                <button type="button" className="btn btn-primary" data-dismiss="modal">OK</button>
+                            </div>
+
                         </div>
                     </div>
                 </div>

@@ -7,7 +7,8 @@ import Carousal from './components/Carousal';
 import Card from './components/Card';
 import Choose from './components/Choose';
 import HowToProcess from './components/HowToProcess';
-import SendMessage from './components/SendMessage';
+// import SendMessage from './components/SendMessage';
+import EnquiryForm from './components/EnquiryForm';
 
 function App() {
 
@@ -17,10 +18,11 @@ function App() {
         <Navbar />
       </BrowserRouter>
       <Carousal />
-      <Card/>
-      <Choose/>
-      <HowToProcess/>
-      <SendMessage/>
+      <Card />
+      <Choose />
+      <HowToProcess />
+      {/* <SendMessage /> */}
+      <EnquiryForm/>
       <Footer />
     </>
   );

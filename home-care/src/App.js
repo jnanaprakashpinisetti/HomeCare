@@ -8,6 +8,7 @@ import Card from './components/Card';
 import Choose from './components/Choose';
 import HowToProcess from './components/HowToProcess';
 // import SendMessage from './components/SendMessage';
+import EnquiryForm from './components/EnquiryForm';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Choose />
       <HowToProcess />
       {/* <SendMessage /> */}
+      <EnquiryForm/>
       <Footer />
     </>
   );

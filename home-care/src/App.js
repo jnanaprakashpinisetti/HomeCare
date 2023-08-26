@@ -22,7 +22,7 @@ function App() {
       <Choose />
       <HowToProcess />
       {/* <SendMessage /> */}
-      <EnquiryForm/>
+      <EnquiryForm />
       <Footer />
     </>
   );

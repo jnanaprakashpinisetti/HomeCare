@@ -8,7 +8,8 @@ const EnquiryForm = () => {
 
     const submitHandler = e => {
         e.preventDefault();
-        emailjs.sendForm('service_91qxp92', 'template_62xk6sf', form.current, 'rZIjqFUg-qhiHTe32')
+        // emailjs.sendForm('service_91qxp92', 'template_62xk6sf', form.current, 'rZIjqFUg-qhiHTe32')
+        emailjs.sendForm('service_h26i529', 'template_f2v8yqp', form.current, 'rZIjqFUg-qhiHTe32')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {

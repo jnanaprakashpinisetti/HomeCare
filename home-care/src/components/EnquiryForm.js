@@ -1,10 +1,12 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import ThankYouModal from './ThankYouModal'
 
 import contactUs from '../images/img/contact-us.jpg'
 
 const EnquiryForm = () => {
     const form = useRef();
+    const firstName = useRef(null);
 
     const submitHandler = e => {
         e.preventDefault();
@@ -16,6 +18,7 @@ const EnquiryForm = () => {
                 console.log(error.text);
             });
         e.target.reset();
+        firstName.current.innerHTML = "test";
     }
     return (
         <>
@@ -93,31 +96,8 @@ const EnquiryForm = () => {
                         </div>
                     </div>
                 </div>
-                {/* <!-- The Modal --> */}
-                <div className="modal fade" id="myModal">
-                    <div className="modal-dialog">
-                        <div className="modal-content">
+                <ThankYouModal/>
 
-                            {/* <!-- Modal Header --> */}
-                            <div className="modal-header">
-
-                                {/* <button type="button" className="close" data-dismiss="modal">&times;</button> */}
-                            </div>
-
-                            {/* <!-- Modal body --> */}
-                            <div className="modal-body">
-                                <h3 className="modal-title">Thank You!</h3>
-                                <p> We have received your message and will be in touch shortly</p>
-                            </div>
-
-                            {/* <!-- Modal footer --> */}
-                            <div className="modal-footer">
-                                <button type="button" className="btn btn-primary" data-dismiss="modal">OK</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
             </section>
         </>
     );

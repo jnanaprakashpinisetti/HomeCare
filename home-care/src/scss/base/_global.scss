@@ -80,6 +80,16 @@ section {
     }
 }
 
+.hero-banner {
+    margin-top: 60px;
+    margin-bottom: 75px;
+    padding: 25px;
+    .row {
+        align-items: center;
+    }
+
+}
+
 .blue {
     color: $blue;
 }
@@ -91,4 +101,10 @@ section {
 // helper classes
 .mt-60 {
     margin-top: 60px
+}
+.mb-75 {
+    margin-bottom: 75px !important;
+    @include mobile {
+        margin-bottom: 30px !important;
+    }
 }

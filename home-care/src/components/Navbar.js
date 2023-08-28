@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
 import { Router, Routes, Route, Link, NavLink, browserHistory, IndexRoute } from 'react-router-dom';
-import Elements from './Elements/Elements';
+
 import log from '../images/logo.png'
+
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import OurServices from './pages/OurServices';
+import Faq from './pages/Faq';
+import ContactUs from './pages/ContactUs';
+import Elements from './Elements/Elements';
+
 
 export default function Navbar() {
 	const [isActive, setActive] = useState(false);
@@ -32,13 +40,13 @@ export default function Navbar() {
 							</li>
 
 							<li className="nav-item">
-								<NavLink to='Our-Services' className="nav-link"> Our Services</NavLink>
+								<NavLink to='Our-services' className="nav-link"> Our Services</NavLink>
 							</li>
 							<li className="nav-item">
 								<NavLink to='FAQs' className="nav-link">FAQs </NavLink>
 							</li>
 							<li className="nav-item">
-								<NavLink to='Contact-Us' className="nav-link">Contact Us </NavLink>
+								<Link to='Contact-us' className="nav-link">Contact Us </Link>
 							</li>
 							<li className="nav-item">
 								<NavLink to='Elements' className="nav-link"> Elements </NavLink>
@@ -53,9 +61,13 @@ export default function Navbar() {
 
 
 			<Routes>
-				{/* <Route path="/" element={<Home />} /> */}
+				<Route path="/" element={<Home />} />
+				<Route path="About-us" element={<AboutUs />} />
+				<Route path="Our-services" element={<OurServices />} />
+				<Route path="FAQs" element={<Faq />} />
+				<Route path="Contact-us" element={<ContactUs />} />
 				<Route path="/Elements" element={<Elements />} />
-				{/* <Route path="/Link" element={<BookList />} /> */}
+				{/* <Route path="Our-services" element={<ContactUs />} /> */}
 			</Routes>
 		</>
 	)

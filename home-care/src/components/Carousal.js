@@ -7,7 +7,7 @@ import hero2 from '../images/carousal/heor-2.jpg';
 export default function MyCarousal() {
     return (
 
-        <div id="myCarousel" className="carousel slide" data-ride="carousel">
+        <div id="myCarousel" className="carousel slide mt-60" data-ride="carousel">
 
             <ul className="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" className="active"></li>

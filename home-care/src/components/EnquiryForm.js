@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import ThankYouModal from './ThankYouModal'
 
@@ -6,7 +6,29 @@ import contactUs from '../images/img/contact-us.jpg'
 
 const EnquiryForm = () => {
     const form = useRef();
-    const firstName = useRef(null);
+    const [firstName, setFirstName] = useState("");
+    const [secondtName, setSecondName] = useState("");
+    const [email, setEmail] = useState("");
+    const [mobile, setMobile] = useState("");
+    const [message, setMessage] = useState("");
+
+    const [error, setErro] = useState({
+        firstName :"",
+        secondtName :"",
+        email :"",
+        mobile :"",
+        message :""
+    });
+
+    const submitForm = e => {
+        e.preventDefault();
+        if(firstName.trim()==="") {
+            setErro({...error, firstName:"Enter First Name"})
+        }else {
+            setErro({...error, firstName:""})
+        }
+        
+    }
 
     const submitHandler = e => {
         e.preventDefault();
@@ -18,7 +40,6 @@ const EnquiryForm = () => {
                 console.log(error.text);
             });
         e.target.reset();
-        firstName.current.innerHTML = "test";
     }
     return (
         <>
@@ -34,15 +55,17 @@ const EnquiryForm = () => {
 
 
                             <div className="form-wrapper">
-                                <form ref={form} onSubmit={submitHandler} id='enquiryForm'>
+                                {/* <form ref={form} onSubmit={submitHandler} id='enquiryForm'> */}
+                                <form ref={form} onSubmit={submitForm} id='enquiryForm'>
                                     {/* Blick-1 */}
                                     <div className="container">
                                         <div className="row">
                                             {/* First Name */}
                                             <div className="col-md-6 form-group">
                                                 <label htmlFor="firstName"><span>* </span>First Name :</label>
-                                                <input type="text" className='form-control' id='firstName' name='firstName' placeholder="Enter First Name" required />
-                                                <span className='error' id='firstNameError'></span>
+                                                <input type="text" className='form-control' id='firstName' name='firstName' placeholder="Enter First Name" required value={firstName} onChange={(e)=>{setFirstName(e.target.value)}}/>
+                                                {/* <span className='error' id='firstNameError'></span> */}
+                                                {error.firstName && <span>{error.firstName}</span>}
                                             </div>
                                             {/* Last Name */}
                                             <div className="col-md-6 form-group">
@@ -86,7 +109,8 @@ const EnquiryForm = () => {
                                         </div>
                                     </div>
                                     <div className="btn-wrap">
-                                        <button type="submit" className="btn btn-primary" data-toggle="modal" data-target="#myModal" disabled>Submit</button>
+                                        {/* <button type="submit" className="btn btn-primary" data-toggle="modal" data-target="#myModal" >Submit</button> */}
+                                        <button type="submit" className="btn btn-primary"  >Submit</button>
                                     </div>
 
 
@@ -96,7 +120,7 @@ const EnquiryForm = () => {
                         </div>
                     </div>
                 </div>
-                <ThankYouModal/>
+                <ThankYouModal />
 
             </section>
         </>

@@ -28,7 +28,7 @@
 
     &:hover {
         img {
-            transition: all 1s;
+
             @include desktop {
                 scale: (1.2);
                 transition: all 1s;
@@ -38,7 +38,8 @@
 
     img {
         width: 100%;
-        max-width: 160px
+        max-width: 160px;
+        transition: all 1s;
     }
 
     .card-body {

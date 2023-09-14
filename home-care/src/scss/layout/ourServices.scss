@@ -1,0 +1,26 @@
+.services {
+    .hero-banner {
+        background-image: url(../../images/img/sample.jpg);
+    }
+
+    .service-banner {
+        background: url(../../images/img/sample.jpg), $yellow;
+        position: relative;
+        &::after {
+            content: "";
+            width: 100%;
+            background: $blue;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: .5;
+        }
+    }
+}
+
+.service-wrap {
+    .row {
+        align-items: flex-start;
+    }
+}

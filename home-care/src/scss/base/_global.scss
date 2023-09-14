@@ -80,12 +80,27 @@ section {
     }
 }
 
+img {
+    width: 100%;
+}
+
 .hero-banner {
     margin-top: 60px;
     margin-bottom: 75px;
     padding: 25px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     .row {
         align-items: center;
+        height: 100%;
+    }
+
+    .container {
+        margin-bottom: 0;
+        height: 100%;
     }
 
 }
@@ -102,8 +117,10 @@ section {
 .mt-60 {
     margin-top: 60px
 }
+
 .mb-75 {
     margin-bottom: 75px !important;
+
     @include mobile {
         margin-bottom: 30px !important;
     }

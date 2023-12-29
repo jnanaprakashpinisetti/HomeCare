@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Router, Routes, Route, Link, NavLink, browserHistory, IndexRoute } from 'react-router-dom';
 
-import log from '../images/logo.png'
+import log from '../images/jencio-logo.svg';
 
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
@@ -25,7 +25,7 @@ export default function Navbar() {
 			<header className="navbar-bg 	 scroll-change">
 				<nav className="navbar navbar-expand-md container">
 					{/* <a className="navbar-brand"> */}
-					<NavLink to='/' className="navbar-brand"><img src={log} alt="SSP Logo" width="50px" /></NavLink>
+					<NavLink to='/' className="navbar-brand"><img src={log} alt="JENCEO Logo" width="50px" /></NavLink>
 					{/* </a> */}
 					<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 						<i className={isActive ? "fa fa-close" : "fa fa-bars"} onClick={toggleClass} ></i>

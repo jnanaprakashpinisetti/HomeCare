@@ -14,7 +14,7 @@ const Home = () => {
             <Card />
             <Choose />
             <HowToProcess />
-            <SendMessage />
+            {/* <SendMessage /> */}
             <EnquiryForm />
 
         </>

@@ -1,6 +1,4 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom'
-import Navbar from './Navbar';
 
 import facebook from '../images/icons/social-media/facebook.svg';
 import twitter from '../images/icons/social-media/twitter.svg';
@@ -9,6 +7,7 @@ import cell from '../images/icons/social-media/cell.svg';
 import email from '../images/icons/social-media/email.svg';
 import location from '../images/icons/social-media/location.svg';
 import youtube from '../images/icons/social-media/youtube.svg';
+
 
 export default function Footer() {
   return (
@@ -19,10 +18,14 @@ export default function Footer() {
             <div className="row">
               <div className="col-md-2">
                 <h4> Menus</h4>
-                {/* <BrowserRouter>
-                  <Navbar />
-                </BrowserRouter> */}
-                </div>
+                <ul>
+                  <li>Home</li>
+                  <li>About Us</li>
+                  <li>Ouser Services</li>
+                  <li>FAQ</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
               <div className="col-md-3">
                 <h4>Services</h4>
                 <div className="services">
@@ -65,10 +68,10 @@ export default function Footer() {
 
         </div>
         <div className="copy-wright">
-            <div className="container">
-              <p> &copy; 2023 JecCeo, All rights received</p>
-            </div>
+          <div className="container">
+            <p> &copy; 2023 JecCeo, All rights received</p>
           </div>
+        </div>
       </footer>
 
     </>

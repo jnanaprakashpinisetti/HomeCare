@@ -2,18 +2,18 @@ footer {
     .footer-wrap {
         padding: 50px 25px 25px 25px;
         margin-bottom: 0;
-        background: #CECECE;
+        background: #403f3f;
         @include mobile {
             padding: 30px 20px 10px 20px;
         }
     }
 
-    h5 {
+    h4 {
         margin-bottom: 15px;
+        color:  #dfd2d2;
 
         @include mobile {
             font-weight: bold;
-            color: $gray;
         }
     }
 
@@ -23,6 +23,7 @@ footer {
         li {
             margin-bottom: 20px;
             list-style: none;
+            color: #b3b3b3;
 
             &:last-child {
                 margin-bottom: 0;
@@ -31,14 +32,14 @@ footer {
         }
 
         a {
-            color: $brand-gray;
+            color: #b3b3b3;
 
             &:hover {
                 text-decoration: none;
-                color: $gray;
+                color: $white;
 
                 img {
-                    opacity: 1;
+                    opacity: 0.8;
                 }
             }
         }
@@ -48,7 +49,7 @@ footer {
         margin-right: 10px;
         width: 100%;
         max-width: 25px;
-        opacity: 0.8;
+        opacity: 0.6;
     }
 
 
@@ -150,12 +151,12 @@ footer {
 
     .copy-wright {
 
-        background-color: #918f8f;
+        background-color: #302f2f;
 
         p {
             margin-bottom: 0;
             text-align: center;
-            color: $gray;
+            color: #b3b3b3;
         }
 
         padding: 15px;

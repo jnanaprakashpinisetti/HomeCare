@@ -13,8 +13,12 @@
     }
 
     img {
-        max-width: 65px;
-        margin: auto
+        width: 65px;
+        margin: auto;
+        @include mobile {
+            width: 100px;
+
+        }
     }
 
     .col-md-6 {

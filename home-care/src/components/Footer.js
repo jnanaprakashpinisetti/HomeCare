@@ -18,12 +18,13 @@ export default function Footer() {
           <div className="container">
             <div className="row">
               <div className="col-md-2">
-                <h5> Menus</h5>
-                <BrowserRouter>
+                <h4> Menus</h4>
+                {/* <BrowserRouter>
                   <Navbar />
-                </BrowserRouter></div>
+                </BrowserRouter> */}
+                </div>
               <div className="col-md-3">
-                <h5>Services</h5>
+                <h4>Services</h4>
                 <div className="services">
 
                   <ul>
@@ -37,7 +38,7 @@ export default function Footer() {
 
               </div>
               <div className="col-md-3">
-                <h5>Follow US</h5>
+                <h4>Follow US</h4>
                 <div className="followus">
                   <ul>
                     <li><a href="#" target="_blank" ><img src={facebook} alt="facebook" />Facebook</a></li>
@@ -48,10 +49,10 @@ export default function Footer() {
                 </div>
               </div>
               <div className="col-md-4">
-                <h5>Contect Us</h5>
+                <h4>Contect Us</h4>
                 <div className="contact-us">
                   <ul>
-                    <li> <a href='tell:9888559955' className="call"><img src={location} alt="location" />9888 559955</a></li>
+                    <li> <a href='tell:9888559955' className="call"><img src={cell} alt="location" />9888 559955</a></li>
                     <li><a href='mailto:jenceocustomercare@gmail.com'><img src={email} alt="location" />jenceocustomercare@gmail.com</a></li>
                     <li className="address">
                       <img src={location} alt="location" /> <span>Shilpa Avenue,  Shilpa Avenue Colony, Miyapur, Hyderabad, Telangana 500085</span>

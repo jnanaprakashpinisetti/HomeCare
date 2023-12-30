@@ -54,7 +54,7 @@ const Faq = () => {
                     <div className="panel panel-default">
                         <div className="panel-heading">
                             <h4 className="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">DO YOU HAVE A GUARANTEE?</a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Do you have a Guarantee?</a>
                             </h4>
                         </div>
                         <div id="collapse4" className="panel-collapse collapse ">

@@ -29,8 +29,14 @@
             position: relative;
             display: block;
 
+            // &.collapsed {
+            //     &::before {
+            //         content: "+"
+            //     }
+            // }
+
             &::before {
-                content: "-";
+                content: "+";
                 width: 30px;
                 height: 30px;
                 position: absolute;
@@ -42,16 +48,17 @@
                 font-size: 25px;
             }
 
-            &.collapsed {
-                &::before {
-                    content: "+"
-                }
-            }
 
             &:hover {
                 text-decoration: none;
             }
         }
+
+        a[aria-expanded="true"] {
+            &::before {
+                 content: "-" !important;
+             }
+         }
 
     }
 

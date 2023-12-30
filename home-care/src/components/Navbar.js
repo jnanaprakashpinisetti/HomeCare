@@ -46,7 +46,7 @@ export default function Navbar() {
 								<NavLink to='FAQs' className="nav-link">FAQs </NavLink>
 							</li>
 							<li className="nav-item">
-								<Link to='Contact-us' className="nav-link">Contact Us </Link>
+								<NavLink to='Contact' className="nav-link">Contact Us </NavLink>
 							</li>
 							<li className="nav-item">
 								<NavLink to='Elements' className="nav-link"> Elements </NavLink>
@@ -65,9 +65,8 @@ export default function Navbar() {
 				<Route path="About-us" element={<AboutUs />} />
 				<Route path="Our-services" element={<OurServices />} />
 				<Route path="FAQs" element={<Faq />} />
-				<Route path="Contact-us" element={<ContactUs />} />
+				<Route path="Contact" element={<ContactUs />} />
 				<Route path="/Elements" element={<Elements />} />
-				{/* <Route path="Our-services" element={<ContactUs />} /> */}
 			</Routes>
 		</>
 	)

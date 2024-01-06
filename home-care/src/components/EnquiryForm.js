@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import ThankYouModal from './ThankYouModal'
 
-import contactUs from '../images/img/contact-us.jpg'
+import contactUs from '../images/img/contact-us-2.jpg'
 
 const EnquiryForm = () => {
     const form = useRef();

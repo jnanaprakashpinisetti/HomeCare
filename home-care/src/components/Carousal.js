@@ -1,8 +1,4 @@
 import React from 'react';
-import hero1 from '../images/carousal/heor-1.jpg';
-import hero2 from '../images/carousal/heor-2.jpg';
-// import hero3 from '../images/carousal/heor-3.jpg'
-// import Navbar from './components/myCarousel';
 
 export default function MyCarousal() {
     return (
@@ -16,7 +12,7 @@ export default function MyCarousal() {
             </ul>
 
             <div className="carousel-inner">
-                <  div className="carousel-item carousel-1 active">
+                <div className="carousel-item carousel-1 active">
                     <div className="innet-text">
                         <h2>test1</h2>
                         <p>Services requirements and providing cost effective and sustainable solutions. To standardize these Services, we have paved our way into forming a group...</p>

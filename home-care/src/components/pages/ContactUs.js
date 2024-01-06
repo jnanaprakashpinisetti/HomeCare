@@ -16,15 +16,13 @@ const ContactUs = () => {
 
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-8">
+                            <div className="col-md-6">
                                 <h1 className="section-heading"><span className="blue">Contact</span> <span className="yellow">Us</span></h1>
                                 <h4>
                                     We are here to help you every step of the way, please feel free to contact us through our online or offline touchpoints.</h4>
 
                             </div>
-                            <div className="col-md-4">
-                                <img src={ContactImg} alt="contact us" />
-                            </div>
+                         
                         </div>
 
                     </div>

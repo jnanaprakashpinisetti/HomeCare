@@ -61,6 +61,7 @@
         font-family: $roboto;
         padding: 15px !important;
         position: relative;
+        white-space: nowrap;
 
         @include mobile {
             padding: 10px 15px !important

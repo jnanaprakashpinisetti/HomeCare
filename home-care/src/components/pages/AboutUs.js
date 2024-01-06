@@ -16,12 +16,7 @@ const AboutUs = () => {
 
                 </div>
             </div>
-00410
-       
-       
-       0.
-       
-       vf     <div className="container">
+  <div className="container">
                 <div className="row">
                     <div className="col-sm-8">
                         <h2>Our Story</h2>

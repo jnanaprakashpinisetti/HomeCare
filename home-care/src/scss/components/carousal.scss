@@ -14,17 +14,26 @@
     position: relative;
     background-position: center center;
 
+    @include mobile-tab {
+        background-image: none !important;
+        background-color: #f5e1cd;
+    }
+
     .innet-text {
+        @include desktop {
         max-width: 30%;
         position: absolute;
         top: 50%;
         left: 10%;
         transform: translateY(-50%)
+        }
+        @include mobile-tab {
+            padding: 30px 20px 0 20px;
+        }
     }
 }
 
 .carousel-1 {
-    // background-image: url(../../images/carousal/heor-1.jpg)
     background-image: url(../../images/carousal/cook.jpg)
 }
 

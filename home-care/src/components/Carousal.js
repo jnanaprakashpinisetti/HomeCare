@@ -1,4 +1,7 @@
 import React from 'react';
+import cook from "../images/carousal/cook-mobile.jpg";
+import babycar from "../images/carousal/baby-care-mobile.jpg";
+import oldagecar from "../images/carousal//old-age-care-mobile.jpg";
 
 export default function MyCarousal() {
     return (
@@ -17,6 +20,7 @@ export default function MyCarousal() {
                         <h2>test1</h2>
                         <p>Services requirements and providing cost effective and sustainable solutions. To standardize these Services, we have paved our way into forming a group...</p>
                     </div>
+                    <img className="d-mobile" src={cook} alt="cook" />
 
                 </div>
                 <div className="carousel-item carousel-2">
@@ -27,6 +31,8 @@ export default function MyCarousal() {
                             Services which started about 3 years ago under their flag ship company Jawan Guarding Services for providing the Housekeeping / Cleaning and Disinfection Services to our esteemed
                         </p>
                     </div>
+                    <img className="d-mobile" src={babycar} alt="cook" />
+
                 </div>
                 <div className="carousel-item carousel-3">
                     <div className="innet-text">
@@ -35,6 +41,7 @@ export default function MyCarousal() {
                             clientele who were using our Security and other Allied Services. As we move forward into providing the clients varied Solutions and meeting their standards in
                         </p>
                     </div>
+                    <img className="d-mobile" src={oldagecar} alt="cook" />
                 </div>
             </div>
 

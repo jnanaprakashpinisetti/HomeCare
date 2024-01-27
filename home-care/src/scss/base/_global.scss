@@ -93,6 +93,14 @@ img {
     background-position: center;
     background-repeat: no-repeat;
 
+    @include mobile {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        height: 500px;
+        background-position: bottom;
+
+    }
+
     .row {
         align-items: center;
         height: 100%;
@@ -101,6 +109,9 @@ img {
     .container {
         margin-bottom: 0;
         height: 100%;
+        @include mobile {
+            height: auto;
+        }
     }
 
 
@@ -133,7 +144,11 @@ img {
 
 .btn-primary {
     background-color: $blue;
-    border: none
+    border: none;
+
+    @include mobile {
+        width: 100%;
+    }
 }
 .d-mobile {
     @include desktop {

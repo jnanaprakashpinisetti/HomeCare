@@ -49,7 +49,7 @@ export default function Navbar() {
 								<NavLink to='Contact' className="nav-link">Contact Us </NavLink>
 							</li>
 							<li className="nav-item">
-								<NavLink to='Elements' className="nav-link"> Elements </NavLink>
+								<NavLink to='Elements' className="nav-link"> Trender Cocnut </NavLink>
 							</li>
 							<li className="nav-item">
 								<NavLink to='Link' className="nav-link"> Link </NavLink>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import services from '../../images/img/sample-2.jpg';
+import aboutUs from '../../images/img/about-us-2.jpg';
 
 const AboutUs = () => {
     return (
@@ -8,7 +8,7 @@ const AboutUs = () => {
             <div className="hero-banner">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-md-8">
                             <h1>About-us</h1>
                         </div>
 
@@ -16,7 +16,7 @@ const AboutUs = () => {
 
                 </div>
             </div>
-  <div className="container">
+            <div className="container">
                 <div className="row">
                     <div className="col-sm-8">
                         <h2>Our Story</h2>
@@ -25,7 +25,7 @@ const AboutUs = () => {
                         <p>Our team understood this problem quite well as we had senior parents who lived alone far away from us. We knew the issues seniors faced everyday and it motivated us immensely to use Helpee as a platform to provide on-demand help for our loved ones.</p>
                     </div>
                     <div className="col-sm-4">
-                    <img src={services} alt="" />
+                        <img src={aboutUs} alt="ourstory" />
                     </div>
                 </div>
 

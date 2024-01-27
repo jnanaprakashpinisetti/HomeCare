@@ -1,6 +1,10 @@
 .faq {
     .hero-banner {
         background-image: url(../../images/img/faq.jpg);
+        @include mobile {
+            background-image: url(../../images/img/faq-mobile.jpg);
+
+        }
     }
 
     .panel-group {
@@ -19,6 +23,10 @@
     .panel-heading {
         padding: 15px;
         background: $blue;
+
+        @include mobile {
+            padding-right: 30px
+        }
     }
 
     .panel-title {
@@ -46,6 +54,13 @@
                 text-align: center;
                 border-radius: 50%;
                 font-size: 25px;
+
+                @include mobile {
+                    width: 25px;
+                    height: 25px;
+                    right:-20px;
+                    font-size: 20px
+                }
             }
 
 

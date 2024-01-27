@@ -3,17 +3,25 @@
     border: none;
     border-bottom: 1px solid $mercury;
     background-color: $white;
-    // transform: translate3d(0px, 0px, 0px);
     position: fixed;
     width: 100%;
     z-index: 5;
     top: 0;
+
+    @include mobile {
+        padding-bottom: 10px;
+
+    }
 }
 
 .navbar-collapse {
     justify-content: end;
 
     @include mobile {
+
+        padding-top: 25px;
+        padding-bottom: 15px;
+        height: 100vh;
 
         &::before {
             content: "";
@@ -23,8 +31,11 @@
             background-color: $mercury;
             left: 0;
             right: 0;
+            top: 60px;
         }
     }
+
+
 }
 
 .navbar {
@@ -32,6 +43,7 @@
     margin-bottom: 0;
 
     @include mobile {
+        background-color: $white;
         padding-left: 0;
         padding-right: 0;
     }
@@ -51,6 +63,7 @@
     .navbar-toggler {
         @include mobile {
             margin-right: 10px;
+            font-size: 25px;
         }
     }
 
@@ -71,7 +84,7 @@
             content: "";
             width: 0;
             height: 1px;
-            background-color: $yellow;
+            background-color: $blue;
             position: absolute;
             bottom: 0;
             left: 0;
@@ -91,11 +104,11 @@
         }
 
         &.active {
-            color: $yellow;
+            color: $blue;
 
             @include mobile {
                 color: $gray;
-                background-color: $yellow;
+                background-color: $blue;
                 // &::before {
                 //     width: 100%;
                 //     transition: all 0.35s ease-out;
@@ -107,7 +120,14 @@
 
     }
 
+    .navbar-nav {
+        @include mobile {
+            padding-bottom: 20px;
+            border-bottom: 1px solid $mercury;
+        }
+    }
+
     .fa {
-        color: $yellow;
+        color: $blue;
     }
 }

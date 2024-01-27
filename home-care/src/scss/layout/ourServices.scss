@@ -1,26 +1,36 @@
 .services {
     .hero-banner {
-        background-image: url(../../images/img/sample.jpg);
+        background-image: url(../../images/img/services.jpg);
+        @include mobile {
+            background-image: url(../../images/img/services-mobile.jpg);
+
+        }
     }
 
     .service-banner {
-        background: url(../../images/img/sample.jpg), $yellow;
-        position: relative;
-        &::after {
-            content: "";
-            width: 100%;
-            background: $blue;
-            height: 300px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: .5;
+        background: url(../../images/img/services-2.jpg);
+        background-size: cover;
+        background-position: center;
+
+        * {
+            color: $white;
         }
+    }
+
+    hr {
+        margin-bottom: 50px;
+        margin-top: 0
+      
     }
 }
 
 .service-wrap {
     .row {
         align-items: flex-start;
+    }
+
+    img {
+        border-radius: 30px;
+        box-shadow: 2px 2px 5px #33333391;
     }
 }

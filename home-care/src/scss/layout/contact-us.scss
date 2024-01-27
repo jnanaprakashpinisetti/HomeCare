@@ -2,6 +2,11 @@
 
     .hero-banner {
         background-image: url(../../images/img/contact-us.jpg);
+
+        @include mobile {
+            background-image: url(../../images/img/contact-us-mobile.jpg);
+
+        }
     }
 
 

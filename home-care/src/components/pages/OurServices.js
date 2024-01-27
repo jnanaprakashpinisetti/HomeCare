@@ -36,19 +36,9 @@ const OurServices = () => {
                     </div>
                     <div className="col-md-7">
                         <h2>Baby Care</h2>
-                        <p>Give your little ones the love and attention they deserve with our reliable babysitters.Experienced and compassionate, our caregivers provide a safe and nurturing environment for your children. Rest easy knowing they're in capable hands.</p>
-                        <h4>Included:</h4>
-                        <ul>
-                            <li>Include-1</li>
-                            <li>Include-2</li>
-                            <li>Include-3</li>
-                            <li>Include-4</li>
-                        </ul>
-                        <h4>Not Included:</h4>
-                        <ul>
-                            <li>Not-Include</li>
-                            <li>Not-Include</li>
-                        </ul>
+                        <p>Give your little ones the love and attention they deserve with our reliable babysitters.Experienced and compassionate. </p>
+                        <p>Our caregivers provide a safe and nurturing environment for your children. Rest easy knowing they're in capable hands.</p>
+                        
                         <div className="btn-wrapper">
                             <a href="#" className="btn btn-primary">Book Now</a>
                         </div>
@@ -58,13 +48,14 @@ const OurServices = () => {
 
             </div>
 
-                <hr></hr>
-    
+            <hr></hr>
+
             <div className="container service-wrap">
                 <div className="row">
-                <div className="col-md-7">
+                    <div className="col-md-7">
                         <h2>Old Age Care</h2>
-                        <p>Give your little ones the love and attention they deserve with our reliable babysitters.Experienced and compassionate, our caregivers provide a safe and nurturing environment for your children. Rest easy knowing they're in capable hands.</p>
+                        <p>Give your little ones the love and attention they deserve with our reliable babysitters.Experienced and compassionate, </p>
+                        <p>our caregivers provide a safe and nurturing environment for your children. Rest easy knowing they're in capable hands.</p>
                         <h4>Included:</h4>
                         <ul>
                             <li>Include-1</li>
@@ -89,15 +80,15 @@ const OurServices = () => {
             <div className="hero-banner service-banner">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
-                            <h1>tell about your services</h1>
-                            <h4>write small discreption</h4>
+                        <div className="col-md-7">
+                            <h2>We will make life better for you</h2>
+                            <p>We respect the fact that every individual is different and unique in terms of their likes, dislikes, interests and habits. Hence, we carry out a comprehensive assessment of your needs and then make significant efforts to match our care assistants to completely suit your needs to ensure compatibility, empathy and mutual respect.</p>
+                            <p>We want to make a remarkable difference to your life with excellent care in your own home.</p>
                         </div>
-                        <div className="col-md-6"></div>
                     </div>
                 </div>
             </div>
-                <div className="container service-wrap">
+            <div className="container service-wrap">
                 <div className="row">
                     <div className="col-md-5">
                         <img src={cook} alt="cook - maid" />
@@ -128,7 +119,7 @@ const OurServices = () => {
             <hr></hr>
             <div className="container service-wrap">
                 <div className="row">
-                <div className="col-md-7">
+                    <div className="col-md-7">
                         <h2>Physotherophy</h2>
                         <p>Give your little ones the love and attention they deserve with our reliable babysitters.Experienced and compassionate, our caregivers provide a safe and nurturing environment for your children. Rest easy knowing they're in capable hands.</p>
                         <h4>Included:</h4>

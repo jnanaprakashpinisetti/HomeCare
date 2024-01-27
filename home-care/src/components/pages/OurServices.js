@@ -1,6 +1,9 @@
 import React from 'react';
 
-import services from '../../images/img/sample-2.jpg';
+import cook from '../../images/img/cook-maid.jpg';
+import babyCare from '../../images/img/baby-care.jpg';
+import oldAgeCare from '../../images/img/old-age-care.jpg';
+import physotherophy from '../../images/img/physotherophy.jpg';
 
 const OurServices = () => {
     return (
@@ -28,10 +31,10 @@ const OurServices = () => {
 
             <div className="container service-wrap">
                 <div className="row">
-                    <div className="col-md-4">
-                        <img src={services} alt="" />
+                    <div className="col-md-5">
+                        <img src={babyCare} alt="baby care" />
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-7">
                         <h2>Baby Care</h2>
                         <p>Give your little ones the love and attention they deserve with our reliable babysitters.Experienced and compassionate, our caregivers provide a safe and nurturing environment for your children. Rest easy knowing they're in capable hands.</p>
                         <h4>Included:</h4>
@@ -55,9 +58,11 @@ const OurServices = () => {
 
             </div>
 
+                <hr></hr>
+    
             <div className="container service-wrap">
                 <div className="row">
-                <div className="col-md-8">
+                <div className="col-md-7">
                         <h2>Old Age Care</h2>
                         <p>Give your little ones the love and attention they deserve with our reliable babysitters.Experienced and compassionate, our caregivers provide a safe and nurturing environment for your children. Rest easy knowing they're in capable hands.</p>
                         <h4>Included:</h4>
@@ -76,8 +81,8 @@ const OurServices = () => {
                             <a href="#" className="btn btn-primary">Book Now</a>
                         </div>
                     </div>
-                    <div className="col-md-4">
-                        <img src={services} alt="" />
+                    <div className="col-md-5">
+                        <img src={oldAgeCare} alt="old age care" />
                     </div>
                 </div>
             </div>
@@ -92,13 +97,12 @@ const OurServices = () => {
                     </div>
                 </div>
             </div>
-
                 <div className="container service-wrap">
                 <div className="row">
-                    <div className="col-md-4">
-                        <img src={services} alt="" />
+                    <div className="col-md-5">
+                        <img src={cook} alt="cook - maid" />
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-7">
                         <h2>Made / Cook</h2>
                         <p>Give your little ones the love and attention they deserve with our reliable babysitters.Experienced and compassionate, our caregivers provide a safe and nurturing environment for your children. Rest easy knowing they're in capable hands.</p>
                         <h4>Included:</h4>
@@ -121,9 +125,10 @@ const OurServices = () => {
                 </div>
 
             </div>
+            <hr></hr>
             <div className="container service-wrap">
                 <div className="row">
-                <div className="col-md-8">
+                <div className="col-md-7">
                         <h2>Physotherophy</h2>
                         <p>Give your little ones the love and attention they deserve with our reliable babysitters.Experienced and compassionate, our caregivers provide a safe and nurturing environment for your children. Rest easy knowing they're in capable hands.</p>
                         <h4>Included:</h4>
@@ -142,8 +147,8 @@ const OurServices = () => {
                             <a href="#" className="btn btn-primary">Book Now</a>
                         </div>
                     </div>
-                    <div className="col-md-4">
-                        <img src={services} alt="" />
+                    <div className="col-md-5">
+                        <img src={physotherophy} alt="physotherophy" />
                     </div>
                 </div>
             </div>

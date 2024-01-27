@@ -11,16 +11,31 @@
         background: url(../../images/img/services-2.jpg);
         background-size: cover;
         background-position: center;
+        
+        @include mobile {
+            background: url(../../images/img/services-2-mobile.jpg);
+            background-position: bottom;
+            height: 750px;
+
+        }
 
         * {
             color: $white;
         }
+
+        h2 {
+            font-size: 40px;
+            @include mobile {
+                font-size: 32px;
+            }
+        }
     }
 
-    hr {
-        margin-bottom: 50px;
-        margin-top: 0
-      
+
+    .col-md-5 {
+        @include mobile {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -30,7 +45,7 @@
     }
 
     img {
-        border-radius: 30px;
+        border-radius: 10px;
         box-shadow: 2px 2px 5px #33333391;
     }
 }

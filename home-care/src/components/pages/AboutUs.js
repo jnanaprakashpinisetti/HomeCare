@@ -8,8 +8,9 @@ const AboutUs = () => {
             <div className="hero-banner">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-8">
+                        <div className="col-md-7">
                             <h1>About-us</h1>
+                            <h5>Our mission is to empower our customers to lead joyous and fulfilling lives, fostering independence to the fullest extent. We are dedicated to supporting you on your journey to happiness and autonomy.</h5>
                         </div>
 
                     </div>
@@ -29,6 +30,20 @@ const AboutUs = () => {
                     </div>
                 </div>
 
+            </div>
+            <hr/>
+            
+            <div className="container">
+            <h2>Guaranteed Comfort</h2>
+            <ul>
+                <li>We serve our customers with utmost dignity and try our best to make them feel comfortable and reduce their anxiety</li>
+                <li>We aim to fully understand your precise needs and preferences before our service begins</li>
+                <li>Only when you are happy with the support plan we have agreed together, will we select a care worker to meet you</li>
+                <li> It will be someone with appropriate experience, qualifications and skills, and you will always be able to change your care worker if you wish</li>
+                <li>You'll find that you will soon get to know your carer, and feel comfortable with them</li>
+                <li>You'll also get to know your local JenCeo Field Care Supervisor, who will make regular visits to your home to check that you are entirely happy with the support you are receiving</li>
+                <li>And you are encouraged to speak to us at any time if you have any concerns about your safety or wellbeing, or wish to change the way your support is arranged</li>
+            </ul>
             </div>
         </div>
     );

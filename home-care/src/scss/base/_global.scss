@@ -15,6 +15,12 @@ body {
         padding: 0;
         margin-bottom: 0;
     }
+
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .sec-bg {
@@ -109,6 +115,7 @@ img {
     .container {
         margin-bottom: 0;
         height: 100%;
+
         @include mobile {
             height: auto;
         }
@@ -142,6 +149,15 @@ img {
     }
 }
 
+hr {
+    margin-bottom: 50px;
+    margin-top: 0;
+    @include mobile {
+margin-bottom: 20px;
+    }
+  
+}
+
 .btn-primary {
     background-color: $blue;
     border: none;
@@ -150,6 +166,7 @@ img {
         width: 100%;
     }
 }
+
 .d-mobile {
     @include desktop {
         display: none;

@@ -3,6 +3,7 @@ footer {
         padding: 50px 25px 25px 25px;
         margin-bottom: 0;
         background: #403f3f;
+
         @include mobile {
             padding: 30px 20px 10px 20px;
         }
@@ -10,7 +11,7 @@ footer {
 
     h4 {
         margin-bottom: 15px;
-        color:  #dfd2d2;
+        color: #dfd2d2;
 
         @include mobile {
             font-weight: bold;
@@ -24,6 +25,10 @@ footer {
             margin-bottom: 20px;
             list-style: none;
             color: #b3b3b3;
+
+            &::before {
+                display: none;
+            }
 
             &:last-child {
                 margin-bottom: 0;

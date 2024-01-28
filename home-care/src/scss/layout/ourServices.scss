@@ -8,7 +8,7 @@
     }
 
     .service-banner {
-        background: url(../../images/img/services-2.jpg);
+    background: url(../../images/img/services-2.jpg);
         background-size: cover;
         background-position: center;
         
@@ -32,11 +32,27 @@
     }
 
 
-    .col-md-5 {
-        @include mobile {
-            margin-bottom: 30px;
-        }
-    }
+   ul {
+       list-style: none;
+       li {
+           margin-bottom: 15px;
+           position: relative; 
+           &::before {
+               content: "";
+               width: 13px;
+               height: 13px;
+               position: absolute;
+               left: -25px;
+               top: 6px;
+               background-image: url(../../images/icons/right-icon.svg);
+               background-size: cover;
+               opacity: .8;
+           }
+           &:last-child {
+               margin-bottom: 0
+           }
+       }
+   }
 }
 
 .service-wrap {

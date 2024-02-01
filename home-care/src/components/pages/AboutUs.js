@@ -9,7 +9,7 @@ const AboutUs = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-7">
-                            <h1>About-us</h1>
+                            <h2 className="section-heading"><span className="blue"> About </span><span className="yellow">Us</span></h2>
                             <h5>Our mission is to empower our customers to lead joyous and fulfilling lives, fostering independence to the fullest extent. We are dedicated to supporting you on your journey to happiness and autonomy.</h5>
                         </div>
 

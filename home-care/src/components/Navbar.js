@@ -48,12 +48,12 @@ export default function Navbar() {
 							<li className="nav-item">
 								<NavLink to='Contact' className="nav-link">Contact Us </NavLink>
 							</li>
-							<li className="nav-item">
+							{/* <li className="nav-item">
 								<NavLink to='Elements' className="nav-link"> Trender Cocnut </NavLink>
 							</li>
 							<li className="nav-item">
 								<NavLink to='Link' className="nav-link"> Link </NavLink>
-							</li>
+							</li> */}
 						</ul>
 					</div>
 				</nav>

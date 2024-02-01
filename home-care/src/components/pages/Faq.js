@@ -7,7 +7,8 @@ const Faq = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h1>FAQ</h1>
+                        <h2 className="section-heading"><span className="blue"> Get a question?<br></br></span><span className="yellow">get your answer</span></h2>
+                        <h5>We are available to help you around the clock, <br></br>so feel free to ask any questions you may have.</h5>
                         </div>
 
                     </div>

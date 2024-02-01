@@ -12,8 +12,9 @@ const OurServices = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <h1>tell about your services</h1>
-                            <h4>write small discreption</h4>
+                        <h2 className="section-heading">Best<span className="blue"> Home Care Services <br></br> </span> In  <span className="yellow">Hyderabad</span></h2>
+                           
+                            <h5>We provide baby care, old-age care, cooking, physiotherapy, and office cleaning services at the best price and with high quality.</h5>
                         </div>
                         <div className="col-md-6"></div>
                     </div>
@@ -88,7 +89,7 @@ const OurServices = () => {
             <div className="hero-banner service-banner">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-8">
+                        <div className="col-md-7">
                             <h2>We will make life better for you</h2>
                             <p>We respect the fact that every individual is different and unique in terms of their likes, dislikes, interests and habits. Hence, we carry out a comprehensive assessment of your needs and then make significant efforts to match our care assistants to completely suit your needs to ensure compatibility, empathy and mutual respect.</p>
                             <p>We want to make a remarkable difference to your life with excellent care in your own home.</p>

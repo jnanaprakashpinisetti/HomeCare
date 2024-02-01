@@ -17,8 +17,8 @@ export default function MyCarousal() {
             <div className="carousel-inner">
                 <div className="carousel-item carousel-1 active">
                     <div className="innet-text">
-                        <h2>test1</h2>
-                        <p>Services requirements and providing cost effective and sustainable solutions. To standardize these Services, we have paved our way into forming a group...</p>
+                    <h2 >Best Home Care Services <br></br> In Hyderabad</h2>
+                        <h5>Discover unparalleled comfort and care with our JenCeo Home care services in Hyderabad</h5>
                     </div>
                     <img className="d-mobile" src={cook} alt="cook" />
 
@@ -26,20 +26,16 @@ export default function MyCarousal() {
                 <div className="carousel-item carousel-2">
 
                     <div className="innet-text">
-                        <h2>test1</h2>
-                        <p>
-                            Services which started about 3 years ago under their flag ship company Jawan Guarding Services for providing the Housekeeping / Cleaning and Disinfection Services to our esteemed
-                        </p>
+                        <h2>Baby Care Service</h2>
+                        <h5>"Nurturing Tomorrow, Today: Exceptional Baby Care Services Tailored with Love and Expertise."</h5>
                     </div>
                     <img className="d-mobile" src={babycar} alt="cook" />
 
                 </div>
                 <div className="carousel-item carousel-3">
                     <div className="innet-text">
-                        <h2>test3</h2>
-                        <p>
-                            clientele who were using our Security and other Allied Services. As we move forward into providing the clients varied Solutions and meeting their standards in
-                        </p>
+                        <h2>Old age care Service</h2>
+                       <h5>"Enriching Lives, Embracing Wisdom: Compassionate Old Age Care Tailored for Dignity and Comfort"</h5>
                     </div>
                     <img className="d-mobile" src={oldagecar} alt="cook" />
                 </div>

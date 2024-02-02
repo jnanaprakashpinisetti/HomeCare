@@ -8,11 +8,11 @@ import physotherophy from '../../images/img/physotherophy.jpg';
 const OurServices = () => {
     return (
         <div className="services">
-            <div className="hero-banner">
+            <div className="hero-banner mt-80">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                        <h2 className="section-heading">Best<span className="blue"> Home Care Services <br></br> </span> In  <span className="yellow">Hyderabad</span></h2>
+                        <h2 className="section-heading">Best<span className="blue"> Home Care Services  </span> <span className="d-desktop"></span> In  <span className="yellow">Hyderabad</span></h2>
                            
                             <h5>We provide baby care, old-age care, cooking, physiotherapy, and office cleaning services at the best price and with high quality.</h5>
                         </div>
@@ -30,7 +30,7 @@ const OurServices = () => {
                 </div>
             </div>
 
-            <div className="container service-wrap">
+            <div className="container service-wrap" id="baby-care">
                 <div className="row">
                     <div className="col-md-4">
                         <img src={babyCare} alt="baby care" />
@@ -59,7 +59,7 @@ const OurServices = () => {
 
             <hr></hr>
 
-            <div className="container service-wrap">
+            <div className="container service-wrap" id="old-age-care">
                 <div className="row">
                     <div className="col-md-8">
                         <h2>Old Age Care</h2>
@@ -97,7 +97,7 @@ const OurServices = () => {
                     </div>
                 </div>
             </div>
-            <div className="container service-wrap">
+            <div className="container service-wrap" id="maid-cook">
                 <div className="row">
                     <div className="col-md-4">
                         <img src={cook} alt="cook - maid" />
@@ -126,7 +126,7 @@ const OurServices = () => {
 
             </div>
             <hr></hr>
-            <div className="container service-wrap">
+            <div className="container service-wrap" id="physotherophy">
                 <div className="row">
                     <div className="col-md-8">
                         <h2>Physotherophy</h2>

@@ -3,7 +3,7 @@ import React from 'react';
 const Faq = () => {
     return (
         <div className="faq">
-            <div className="hero-banner">
+            <div className="hero-banner mt-80">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">

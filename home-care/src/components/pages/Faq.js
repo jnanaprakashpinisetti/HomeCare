@@ -1,4 +1,5 @@
 import React from 'react';
+import EnquiryForm from '../EnquiryForm';
 
 const Faq = () => {
     return (
@@ -124,6 +125,7 @@ const Faq = () => {
 
                 </div>
             </div>
+            <EnquiryForm />
 
         </div>
     );

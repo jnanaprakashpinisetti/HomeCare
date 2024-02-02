@@ -4,7 +4,7 @@ import aboutUs from '../../images/img/about-us-2.jpg';
 
 const AboutUs = () => {
     return (
-        <div className="about-us mt-60">
+        <div className="about-us mt-80">
             <div className="hero-banner">
                 <div className="container">
                     <div className="row">

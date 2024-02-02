@@ -12,7 +12,7 @@ const ContactUs = () => {
     return (
         <>
             <section className="contact-us">
-                <div className="hero-banner">
+                <div className="hero-banner mt-80">
 
                     <div className="container">
                         <div className="row">

@@ -28,7 +28,7 @@ export default function Card() {
               <p>Give your little ones the love and attention they deserve with our reliable babysitters</p>
             </div>
             <div className="btn-wrapper">
-              <a href="#" className="btn btn-primary">See More</a>
+              <a href="Our-services/#baby-care" className="btn btn-primary">See More</a>
             </div>
           </div>
         </div>

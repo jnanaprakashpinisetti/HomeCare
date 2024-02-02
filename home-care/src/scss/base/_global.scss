@@ -126,6 +126,14 @@ img {
         margin-bottom: 15px;
         margin-left: 0;
         text-align: left;
+
+        @include mobile {
+            font-size: 24px
+        }
+    }
+
+    h5 {
+        font-size: 16px;
     }
 
 }
@@ -150,6 +158,13 @@ img {
         margin-bottom: 30px !important;
     }
 }
+.mt-80 {
+    margin-top: 88px !important;
+
+    @include mobile {
+        margin-top: 106px !important;
+    }
+}
 
 hr {
     margin-bottom: 50px;
@@ -158,6 +173,13 @@ hr {
 margin-bottom: 20px;
     }
   
+}
+
+.d-desktop {
+    display: block;
+    @include mobile {
+        display: none;
+    }
 }
 
 .btn-primary {

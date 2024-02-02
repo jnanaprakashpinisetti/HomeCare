@@ -6,7 +6,7 @@ import oldagecar from "../images/carousal//old-age-care-mobile.jpg";
 export default function MyCarousal() {
     return (
 
-        <div id="myCarousel" className="carousel slide mt-60" data-ride="carousel">
+        <div id="myCarousel" className="carousel slide" data-ride="carousel">
 
             <ul className="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" className="active"></li>

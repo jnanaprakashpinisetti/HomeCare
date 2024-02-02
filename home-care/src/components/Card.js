@@ -44,7 +44,7 @@ export default function Card() {
               <p>Trust our compassionate caregivers to provide personalized on physical well-being</p>
             </div>
             <div className="btn-wrapper">
-              <a href="#" className="btn btn-primary">See More</a>
+              <a href="Our-services/#Our-services" className="btn btn-primary">See More</a>
             </div>
           </div>
         </div>
@@ -60,7 +60,7 @@ export default function Card() {
               <p>Effcient maids and expert cooks at your service. Enjoy a clean home and delectable meals</p>
             </div>
             <div className="btn-wrapper">
-              <a href="#" className="btn btn-primary">See More</a>
+              <a href="Our-services/#maid-cook" className="btn btn-primary">See More</a>
             </div>
           </div>
         </div>

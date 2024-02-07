@@ -1,6 +1,6 @@
 // import './App.scss';
 import React, { useState } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import TopNav from './components/TopNav'
@@ -10,13 +10,13 @@ function App() {
 
   return (
     <>
-        <TopNav />
-      <BrowserRouter>
+      <TopNav />
+      <HashRouter>
         <Navbar />
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
 
-      
+
 
     </>
   );

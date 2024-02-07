@@ -25,7 +25,7 @@ const OurServices = () => {
                 <div className="row">
                     <div className="col-md-12">
                         <h2>Home Care Services in Hyderabad</h2>
-                        <p>The need for home care services in Hyderabad is growing rapidly as people’s work and personal lives are becoming increasingly intertwined, making it difficult for them to care for the elderly and those in need. JenCeo has partnered with the most reputable home care services to provide affordable, high-quality care. Our caretakers are highly qualified and trained in maintaining hygiene and promoting overall health</p>
+                        <p>The need for home care services in Hyderabad is growing rapidly as people’s work and personal lives are becoming increasingly intertwined, making it difficult for them to care for the elderly and those in need. JenCeo has partnered with the most reputable home care services to provide affordable, high-quality care. Our caretakers are highly qualified and trained in maintaining hygiene and promoting overall health.</p>
                     </div>
                 </div>
             </div>
@@ -38,14 +38,14 @@ const OurServices = () => {
                     <div className="col-md-8">
                         <h2>Baby Care</h2>
 
-                        <p>where we understand that every little one deserves the utmost care and attention. Our dedicated team of childcare experts is committed to providing a nurturing environment that supports the healthy development and happiness of your precious bundle of joy</p>
-                        <p>Give your little ones the love and attention they deserve with our reliable babysitters.Experienced and compassionate. </p>
+                        <p>where we understand that every little one deserves the utmost care and attention. Our dedicated team of childcare experts is committed to providing a nurturing environment that supports the healthy development and happiness of your precious bundle of joy.</p>
+                        <p>Give your little ones the love and attention they deserve with our reliable babysitters. Experienced and compassionate. </p>
                         <p>Our caregivers provide a safe and nurturing environment for your children. Rest easy knowing they're in capable hands.</p>
                         <ul>
-                            <li><strong>Expertise in Infant Care:</strong> Our team has a wealth of experience in caring for infants, ensuring that your baby receives the best care possible</li>
-                            <li><strong>Parental Involvement:</strong> We believe in fostering a strong partnership with parents. Regular communication and involvement in your baby's care are key aspects of our approach</li>
-                            <li><strong>Holistic Care:</strong> Beyond basic needs, we focus on the holistic well-being of your baby, addressing emotional, social, and developmental aspects</li>
-                            <li><strong>Flexible Programs:</strong> Our baby care programs are designed to accommodate the unique schedules and preferences of each family, providing flexibility and convenience</li>
+                            <li><strong>Expertise in Infant Care:</strong> Our team has a wealth of experience in caring for infants, ensuring that your baby receives the best care possible.</li>
+                            <li><strong>Parental Involvement:</strong> We believe in fostering a strong partnership with parents. Regular communication and involvement in your baby's care are key aspects of our approach.</li>
+                            <li><strong>Holistic Care:</strong> Beyond basic needs, we focus on the holistic well-being of your baby, addressing emotional, social, and developmental aspects.</li>
+                            <li><strong>Flexible Programs:</strong> Our baby care programs are designed to accommodate the unique schedules and preferences of each family, providing flexibility and convenience.</li>
                         </ul>
 
                         <div className="btn-wrapper">
@@ -103,15 +103,15 @@ const OurServices = () => {
                         <img src={cook} alt="cook - maid" />
                     </div>
                     <div className="col-md-8">
-                        <h2>Made / Cook</h2>
+                        <h2>Maid / Cook</h2>
                         <p>We take pride in offering a unique and personalized cooking experience that brings the joy of delicious, homemade meals right to your doorstep.</p>
                         <p>We believe that exceptional meals should be accessible to everyone. Let us redefine your culinary experience, bringing the love and expertise of a chef directly to your home. Explore our offerings and embark on a journey of delectable flavors and unparalleled convenience.</p>
 
                         <ul>
-                            <li><strong>Chef Expertise:</strong>  Our team of skilled chefs brings a wealth of culinary expertise to your table, ensuring a delightful dining experience</li>
-                            <li><strong>Fresh and Locally Sourced Ingredients:</strong>  We prioritize the use of fresh, high-quality, and locally sourced ingredients to create meals that are both delicious and wholesome</li>
-                            <li><strong>Flexibility and Customization:</strong>  We understand that everyone's tastes and dietary needs are unique. Our services are highly flexible and can be tailored to meet your specific preferences</li>
-                            <li><strong>Convenience Redefined:</strong>  Say goodbye to kitchen stress. Our services are designed to save you time and effort, allowing you to savor the moments that matter</li>
+                            <li><strong>Chef Expertise:</strong>  Our team of skilled chefs brings a wealth of culinary expertise to your table, ensuring a delightful dining experience.</li>
+                            <li><strong>Fresh and Locally Sourced Ingredients:</strong>  We prioritize the use of fresh, high-quality, and locally sourced ingredients to create meals that are both delicious and wholesome.</li>
+                            <li><strong>Flexibility and Customization:</strong>  We understand that everyone's tastes and dietary needs are unique. Our services are highly flexible and can be tailored to meet your specific preferences.</li>
+                            <li><strong>Convenience Redefined:</strong>  Say goodbye to kitchen stress. Our services are designed to save you time and effort, allowing you to savor the moments that matter.</li>
 
 
 
@@ -129,13 +129,13 @@ const OurServices = () => {
             <div className="container service-wrap" id="physotherophy">
                 <div className="row">
                     <div className="col-md-8">
-                        <h2>Physotherophy</h2>
+                        <h2>Physiotherapy</h2>
                         <p>Where we are dedicated to enhancing your well-being through personalized and comprehensive physiotherapy services. Our experienced team of physiotherapists is committed to providing effective care that addresses your unique needs and promotes a healthier, more active lifestyle.</p>
                         <p>We believe in the transformative power of physiotherapy to improve lives. Whether you're recovering from an injury, managing chronic conditions, or seeking to enhance your physical well-being, our team is here to guide you on your journey to optimal health.</p>
                         <ul>
-                            <li><strong>Expertise and Experience:</strong> Our team comprises skilled and experienced physiotherapists dedicated to providing high-quality care</li>
-                            <li><strong>Patient-Centric Approach:</strong> Your well-being is at the center of everything we do. We take the time to understand your needs and tailor our treatments accordingly</li>
-                            <li><strong>Holistic Wellness:</strong> Beyond addressing specific issues, we emphasize holistic wellness, supporting you in achieving long-term health and vitality</li>
+                            <li><strong>Expertise and Experience:</strong> Our team comprises skilled and experienced physiotherapists dedicated to providing high-quality care.</li>
+                            <li><strong>Patient-Centric Approach:</strong> Your well-being is at the center of everything we do. We take the time to understand your needs and tailor our treatments accordingly.</li>
+                            <li><strong>Holistic Wellness:</strong> Beyond addressing specific issues, we emphasize holistic wellness, supporting you in achieving long-term health and vitality.</li>
                         </ul>
                         <div className="btn-wrapper">
                             <a href="#" className="btn btn-primary">Book Now</a>

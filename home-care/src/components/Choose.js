@@ -19,11 +19,11 @@ export default function Choose() {
                                 <img src={expertIcon} alt="" />
                             </div>
                             <div className="info-wrap">
-                                <h4>Get Expert Professional at Your Door-Step</h4>
+                                <h4>Get Professionals at Your Door-Step</h4>
 
-                                <p>We understand the challenges and demands of finding trusted professionals for your service requirements.</p>
+                                <p>Stop searching, start achieving! Leave the vetting to us and unlock peace of mind with our curated network of dependable service professionals.</p>
 
-                                <p>We are specializing in recruiting and placing top home care professionals for all kinds of works for day-to-day life at your door step </p>
+                                <p>We proudly place top-tier home care professionals to assist with daily tasks and personal care, bringing support directly to your doorstep.</p>
                             </div>
                         </div>
 
@@ -32,8 +32,8 @@ export default function Choose() {
                                 <img src={customerIcon} alt="" />
                             </div>
                             <div className="info-wrap">
-                                <h4>Customer satisfaction & Quality Output</h4>
-                                <p>We specialized in all kinds of works Quality for day-to-day life. We have taken multiple steps to make sure a hygienic service experience within the safety of your home.</p>
+                                <h4>Customer satisfaction</h4>
+                                <p>We specialize in providing high-quality services for all your daily needs, ensuring a safe and hygienic experience within the comfort of your home.</p>
                             </div>
 
                         </div>
@@ -45,10 +45,8 @@ export default function Choose() {
                                 <img src={standerdIcon} alt="" />
                             </div>
                             <div className="info-wrap">
-                                <h4>Highest Standards & Quality Assurance</h4>
-
+                                <h4>Highest Standards in Quality Assurance</h4>
                                 <p>We understand the challenges and demands of finding trusted professionals for your service requirements.</p>
-                                <p>We are specializing in recruiting and placing top home care professionals for all kinds of works for day-to-day life at your door step. </p>
                             </div>
                         </div>
 

@@ -24,7 +24,7 @@ export default function HowToProcess() {
                             </div>
                             <div className="card-body">
                                 <h4>Get In Touch</h4>
-                                <p>Talk to us and tell us your individual needs so we can start to tailor an individual plan of care.</p>
+                                <p>Tell us your specific needs, so that we can tailor a personalised plan according to your preferences.</p>
                             </div>
 
                         </div>
@@ -38,7 +38,7 @@ export default function HowToProcess() {
                             </div>
                             <div className="card-body">
                                 <h4>Free Assessment</h4>
-                                <p>Our support team will make arrangements to meet you personally for a full assesment.</p>
+                                <p>Our support team will make arrangements to meet you personally for a full assessment.</p>
                             </div>
 
                         </div>
@@ -52,7 +52,7 @@ export default function HowToProcess() {
                             </div>
                             <div className="card-body">
                                 <h4>Career Assigned</h4>
-                                <p>We carefully match our clients to their Care & Support worker based on a wide range of criteria.</p>
+                                <p>Your care with Jenceo will begin that has been tailored specifically to meet your individual needs.</p>
                             </div>
 
                         </div>

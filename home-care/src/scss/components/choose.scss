@@ -12,6 +12,12 @@
         margin-bottom: 0;
     }
 
+    .row {
+        &:first-child {
+           margin-bottom: 20px;
+        }
+    }
+
     img {
         width: 65px;
         margin: auto;

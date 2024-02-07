@@ -33,8 +33,8 @@ export default function Footer() {
                   <ul>
                     <li>House Keeping</li>
                     <li>Baby Care</li>
-                    <li>Cooks / Maid Servant</li>
-                    <li>Old Age People Care</li>
+                    <li>In-house cooks / Maids</li>
+                    <li>Golden age support</li>
                     <li>Beside Aaya / Attender</li>
                   </ul>
                 </div>

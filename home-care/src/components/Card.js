@@ -28,7 +28,7 @@ export default function Card() {
               <p>Give your little ones the love and attention they deserve with our reliable babysitters.</p>
             </div>
             <div className="btn-wrapper">
-              <a href="Our-services/#baby-care" className="btn btn-primary">See More</a>
+              <a href="#/Our-services/#baby-care" className="btn btn-primary">See More</a>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function Card() {
               <p>Trust our compassionate caregivers to provide personalized well-being of our elders.</p>
             </div>
             <div className="btn-wrapper">
-              <a href="Our-services/#Our-services" className="btn btn-primary">See More</a>
+              <a href="#/Our-services/#old-age-care" className="btn btn-primary">See More</a>
             </div>
           </div>
         </div>
@@ -60,7 +60,7 @@ export default function Card() {
               <p>Say goodbye to chores and hello to gourmet! Our expert chefs and home care professionals bring the joy of delicious meals and a spotless home to you.</p>
             </div>
             <div className="btn-wrapper">
-              <a href="Our-services/#maid-cook" className="btn btn-primary">See More</a>
+              <a href="#/Our-services/#maid-cook" className="btn btn-primary">See More</a>
             </div>
           </div>
         </div>

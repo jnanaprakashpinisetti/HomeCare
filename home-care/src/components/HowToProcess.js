@@ -52,7 +52,7 @@ export default function HowToProcess() {
                             </div>
                             <div className="card-body">
                                 <h4>Career Assigned</h4>
-                                <p>Your care with Jenceo will begin that has been tailored specifically to meet your individual needs.</p>
+                                <p>We carefully match our clients to theri care & Support worker based on a wide range of criteria.</p>
                             </div>
 
                         </div>
@@ -66,7 +66,7 @@ export default function HowToProcess() {
                             </div>
                             <div className="card-body">
                                 <h4>Start of Care</h4>
-                                <p>Your care with Caremark will begin that has been tailored specifically to meet your individual needs.</p>
+                                <p>Your care with JenCeo will begin that has been tailored specifically to meet your individual needs.</p>
                             </div>
 
                         </div>

@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="container">
             <div className="row">
               <div className="col-md-2">
-                <h4> Menus</h4>
+                <h4> Links</h4>
                 <ul>
                   <li>Home</li>
                   <li>About Us</li>
@@ -44,21 +44,21 @@ export default function Footer() {
                 <h4>Follow US</h4>
                 <div className="followus">
                   <ul>
-                    <li><a href="#" target="_blank" ><img src={facebook} alt="facebook" />Facebook</a></li>
-                    <li><a href="#" target="_blank" ><img src={instagram} alt="instagram" />Instagram</a></li>
-                    <li><a href="#" target="_blank" ><img src={twitter} alt="twitter" />Twitter</a></li>
-                    <li><a href="#" target="_blank" ><img src={youtube} alt="youtube" />YouTube</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100093798434010" target="_blank" ><img src={facebook} alt="facebook" />Facebook</a></li>
+                    <li><a href="https://www.instagram.com/jenceohomecare/" target="_blank" ><img src={instagram} alt="instagram" />Instagram</a></li>
+                    <li><a href="https://twitter.com/JenCeoHomeCare" target="_blank" ><img src={twitter} alt="twitter" />Twitter</a></li>
+                    <li><a href="https://www.youtube.com/@JenCeo-hz3gn" target="_blank" ><img src={youtube} alt="youtube" />YouTube</a></li>
                   </ul>
                 </div>
               </div>
               <div className="col-md-4">
-                <h4>Contect Us</h4>
+                <h4>Contact Us</h4>
                 <div className="contact-us">
                   <ul>
                     <li> <a href='tell:9888559955' className="call"><img src={cell} alt="location" />9888 559955</a></li>
                     <li><a href='mailto:jenceocustomercare@gmail.com'><img src={email} alt="location" />jenceocustomercare@gmail.com</a></li>
                     <li className="address">
-                      <img src={location} alt="location" /> <span>Shilpa Avenue,  Shilpa Avenue Colony, Miyapur, Hyderabad, Telangana 500085</span>
+                      <img src={location} alt="location" /> <span>#2-3-381, Road No.4, Sainagar Colony, Alkapuri X Road, Nagole, Hyderabad Telangana (India), Pin - 500 068</span>
                     </li>
                   </ul>
                 </div>

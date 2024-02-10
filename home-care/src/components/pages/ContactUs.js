@@ -19,7 +19,7 @@ const ContactUs = () => {
                             <div className="col-md-6">
                                 <h2 className="section-heading"><span className="blue">Contact</span> <span className="yellow">Us</span></h2>
                                 <h5>
-                                    We are here to help you every step of the way, please feel free to contact us through our online or offline touchpoints.</h5>
+                                    We are here to help in your every step, please feel free to contact us through our online or offline touchpoints.</h5>
 
                             </div>
                          

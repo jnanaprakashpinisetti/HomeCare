@@ -134,3 +134,30 @@
         color: $blue;
     }
 }
+
+.home-care {
+    background-color: $green;
+    color: $white;
+    padding: 0;
+    border-radius: 5px;
+    max-height: 35px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+        border-radius: 0;
+    }
+
+    &:hover {
+        background-color: $blue;
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+        padding: 5px 10px;
+        font-size: 14px;
+
+    }
+}

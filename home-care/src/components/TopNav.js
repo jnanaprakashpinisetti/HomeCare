@@ -16,34 +16,18 @@ const TopNav = () => {
                     <div className="col-md-6 left">
 
                         <ul className="socilaMedia">
-                            <li>
-                                <a href="">follow us: </a>
-                            </li>
-                            <li><a href="">
-                                <img src={facebook} alt="facebook" />
-                            </a></li>
-                            <li><a href="">
-                                <img src={twitter} alt="twitter" />
-                            </a></li>
-                            <li><a href="">
-                                <img src={instagram} alt="instagram" />
-                            </a></li>
-                            <li><a href="">
-                                <img src={youtube} alt="youtube" />
-                            </a></li>
+                            <li><a href="#">follow us: </a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100093798434010" target="_blank" rel="noreferrer" > <img src={facebook} alt="facebook" /></a></li>
+                            <li><a href="https://twitter.com/JenCeoHomeCare" target="_blank"   rel="noreferrer"><img src={twitter} alt="twitter" /></a></li>
+                            <li><a href="https://www.instagram.com/jenceohomecare/" target="_blank"  rel="noreferrer" ><img src={instagram} alt="instagram" /></a></li>
+                            <li><a href="https://www.youtube.com/@JenCeo-hz3gn" target="_blank"  rel="noreferrer" ><img src={youtube} alt="youtube" /></a></li>
                         </ul>
 
                     </div>
                     <div className="col-md-6 right">
                         <ul>
-                            <li><a href="tell:9888559955">
-                                <img src={cell} alt="call icon" />
-                                9888 559955
-                            </a></li>
-                            <li><a href="mailto:jenceocustomercare@gmail.com">
-                                <img src={email} alt="email icon" />
-                                jenceocustomercare@gmail.com
-                            </a></li>
+                            <li><a href="tell:9888559955"><img src={cell} alt="call icon" />9888 559955</a></li>
+                            <li><a href="mailto:jenceocustomercare@gmail.com"><img src={email} alt="email icon" />jenceocustomercare@gmail.com</a></li>
                         </ul>
                     </div>
 

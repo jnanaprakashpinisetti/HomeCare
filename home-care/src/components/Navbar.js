@@ -49,7 +49,7 @@ export default function Navbar() {
 								<NavLink to='Contact' className="nav-link">Contact Us </NavLink>
 							</li>
 							<li className="nav-item home-care">
-								<a href='https://trads.jenceo.com/' >JenCeo - Trads</a>
+								<a href='https://trades.jenceo.com/' >JenCeo - Trades</a>
 							</li>
 							{/* <li className="nav-item">
 								<NavLink to='Elements' className="nav-link"> Trender Cocnut </NavLink>

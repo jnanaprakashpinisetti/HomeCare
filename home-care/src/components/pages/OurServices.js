@@ -4,6 +4,8 @@ import cook from '../../images/img/cook-maid.jpg';
 import babyCare from '../../images/img/baby-care.jpg';
 import oldAgeCare from '../../images/img/old-age-care.jpg';
 import physotherophy from '../../images/img/physotherophy.jpg';
+import patentCare from '../../images/img/patent-care.jpg';
+import officeCleaing from '../../images/img/office-cleaning.jpg';
 
 const OurServices = () => {
     return (
@@ -86,6 +88,32 @@ const OurServices = () => {
                     </div>
                 </div>
             </div>
+
+            <hr></hr>
+            <div className="container service-wrap" id="bedside-attendants">
+                <div className="row">
+                    <div className="col-md-4">
+                        <img src={patentCare} alt="patent care" />
+                    </div>
+                    <div className="col-md-8">
+                        <h2>Aaya / Bedside Attendants & Nurses Service for Elderly and Sick People</h2>
+
+                        <p>Jenceo offers compassionate and professional aaya services for elderly and sick individuals, ensuring comfort and care at home.</p>
+                        <ul>
+                            <li><strong>Trained  Caregivers:</strong>Experienced aayas / Nurses skilled in elderly and patient care, including mobility assistance, medication reminders, and hygiene support.</li>
+                            <li><strong>24/7 Availability:</strong> Round-the-clock support to meet the needs of your loved ones at any time of the day or night.</li>
+                            <li><strong>Personalized Care Plans:</strong> Tailored services based on individual health requirements and preferences, ensuring the highest level of comfort.</li>
+                            <li><strong>Flexible Service Hours:</strong> Choose from hourly, daily, or live-in options based on your requirements.</li>
+                        </ul>
+
+                        <div className="btn-wrapper">
+                            <a href="#" className="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
             <div className="hero-banner service-banner">
                 <div className="container">
                     <div className="row">
@@ -97,7 +125,7 @@ const OurServices = () => {
                     </div>
                 </div>
             </div>
-            <div className="container service-wrap" id="maid-cook">
+            <div className="container service-wrap" id="maid /cook">
                 <div className="row">
                     <div className="col-md-4">
                         <img src={cook} alt="cook - maid" />
@@ -112,10 +140,6 @@ const OurServices = () => {
                             <li><strong>Fresh and Locally Sourced Ingredients:</strong>  We prioritize the use of fresh, high-quality, and locally sourced ingredients to create meals that are both delicious and wholesome.</li>
                             <li><strong>Flexibility and Customization:</strong>  We understand that everyone's tastes and dietary needs are unique. Our services are highly flexible and can be tailored to meet your specific preferences.</li>
                             <li><strong>Convenience Redefined:</strong>  Say goodbye to kitchen stress. Our services are designed to save you time and effort, allowing you to savor the moments that matter.</li>
-
-
-
-
                         </ul>
                         <div className="btn-wrapper">
                             <a href="#" className="btn btn-primary">Book Now</a>
@@ -145,6 +169,32 @@ const OurServices = () => {
                         <img src={physotherophy} alt="physotherophy" />
                     </div>
                 </div>
+            </div>
+
+            <hr></hr>
+
+            <div className="container service-wrap" id="office-clean">
+                <div className="row">
+                    <div className="col-md-4">
+                        <img src={officeCleaing} alt="office-clean" />
+                    </div>
+                    <div className="col-md-8">
+                        <h2>Office Cleaning</h2>
+                        <p>Jenceo offers professional office cleaning services to maintain a clean, healthy, and productive workspace. Our team ensures that your office environment remains spotless, organized, and inviting for employees and visitors alike.</p>
+
+                        <ul>
+                            <li><strong>Comprehensive Cleaning:</strong> Our services cover dusting, mopping, vacuuming, sanitizing surfaces, and waste disposal, ensuring every corner is spotless.</li>
+                            <li><strong>Customizable Packages:</strong>  Customizable Packages.</li>
+                            <li><strong>Eco-Friendly Products:</strong>  We use safe, eco-friendly cleaning products to ensure the health and safety of your employees and the environment.</li>
+                            <li><strong>Trained Professionals:</strong>  Our cleaning staff is experienced, trustworthy, and trained to handle all types of office cleaning tasks efficiently.</li>
+                        </ul>
+                        <div className="btn-wrapper">
+                            <a href="#" className="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
 

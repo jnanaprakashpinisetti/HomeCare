@@ -61,7 +61,25 @@
     }
 
     img {
-        border-radius: 10px;
+        border-radius: 5px;
         box-shadow: 2px 2px 5px #33333391;
+        @include mobile {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+#old-age-care {
+    .btn-wrapper {
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
+}
+#physotherophy {
+    .btn-wrapper {
+        @include mobile {
+            margin-bottom: 30px;
+        }
     }
 }

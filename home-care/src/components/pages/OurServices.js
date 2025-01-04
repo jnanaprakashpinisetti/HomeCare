@@ -50,9 +50,9 @@ const OurServices = () => {
                             <li><strong>Flexible Programs:</strong> Our baby care programs are designed to accommodate the unique schedules and preferences of each family, providing flexibility and convenience.</li>
                         </ul>
 
-                        <div className="btn-wrapper">
+                        {/* <div className="btn-wrapper">
                             <a href="#" className="btn btn-primary">Book Now</a>
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>
@@ -79,9 +79,9 @@ const OurServices = () => {
                             <li>Provide timely medicines</li>
                         </ul>
 
-                        <div className="btn-wrapper">
+                        {/* <div className="btn-wrapper">
                             <a href="#" className="btn btn-primary">Book Now</a>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="col-md-4">
                         <img src={oldAgeCare} alt="old age care" />
@@ -98,17 +98,17 @@ const OurServices = () => {
                     <div className="col-md-8">
                         <h2>Aaya / Bedside Attendants & Nurse Service for Elderly and Sick People</h2>
 
-                        <p>Jenceo offers compassionate and professional aaya services for elderly and sick individuals, ensuring comfort and care at home.</p>
+                        <p>Jenceo offers compassionate and professional Aaya / Care taker / Nurse services for elderly and sick individuals, ensuring comfort and care at Home / Hospital.</p>
                         <ul>
-                            <li><strong>Trained  Caregivers:</strong>Experienced aayas / Nurses skilled in elderly and patient care, including mobility assistance, medication reminders, and hygiene support.</li>
+                            <li><strong>Trained  Caregivers:</strong> Experienced aayas / Nurses skilled in elderly and patient care, including mobility assistance, medication reminders, and hygiene support.</li>
                             <li><strong>24/7 Availability:</strong> Round-the-clock support to meet the needs of your loved ones at any time of the day or night.</li>
                             <li><strong>Personalized Care Plans:</strong> Tailored services based on individual health requirements and preferences, ensuring the highest level of comfort.</li>
                             <li><strong>Flexible Service Hours:</strong> Choose from hourly, daily, or live-in options based on your requirements.</li>
                         </ul>
 
-                        <div className="btn-wrapper">
+                        {/* <div className="btn-wrapper">
                             <a href="#" className="btn btn-primary">Book Now</a>
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>
@@ -141,9 +141,9 @@ const OurServices = () => {
                             <li><strong>Flexibility and Customization:</strong>  We understand that everyone's tastes and dietary needs are unique. Our services are highly flexible and can be tailored to meet your specific preferences.</li>
                             <li><strong>Convenience Redefined:</strong>  Say goodbye to kitchen stress. Our services are designed to save you time and effort, allowing you to savor the moments that matter.</li>
                         </ul>
-                        <div className="btn-wrapper">
+                        {/* <div className="btn-wrapper">
                             <a href="#" className="btn btn-primary">Book Now</a>
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>
@@ -161,9 +161,9 @@ const OurServices = () => {
                             <li><strong>Patient-Centric Approach:</strong> Your well-being is at the center of everything we do. We take the time to understand your needs and tailor our treatments accordingly.</li>
                             <li><strong>Holistic Wellness:</strong> Beyond addressing specific issues, we emphasize holistic wellness, supporting you in achieving long-term health and vitality.</li>
                         </ul>
-                        <div className="btn-wrapper">
+                        {/* <div className="btn-wrapper">
                             <a href="#" className="btn btn-primary">Book Now</a>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="col-md-4">
                         <img src={physotherophy} alt="physotherophy" />
@@ -188,9 +188,9 @@ const OurServices = () => {
                             <li><strong>Eco-Friendly Products:</strong>  We use safe, eco-friendly cleaning products to ensure the health and safety of your employees and the environment.</li>
                             <li><strong>Trained Professionals:</strong>  Our cleaning staff is experienced, trustworthy, and trained to handle all types of office cleaning tasks efficiently.</li>
                         </ul>
-                        <div className="btn-wrapper">
+                        {/* <div className="btn-wrapper">
                             <a href="#" className="btn btn-primary">Book Now</a>
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>

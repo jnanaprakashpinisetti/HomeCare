@@ -96,7 +96,7 @@ const OurServices = () => {
                         <img src={patentCare} alt="patent care" />
                     </div>
                     <div className="col-md-8">
-                        <h2>Aaya / Bedside Attendants & Nurses Service for Elderly and Sick People</h2>
+                        <h2>Aaya / Bedside Attendants & Nurse Service for Elderly and Sick People</h2>
 
                         <p>Jenceo offers compassionate and professional aaya services for elderly and sick individuals, ensuring comfort and care at home.</p>
                         <ul>

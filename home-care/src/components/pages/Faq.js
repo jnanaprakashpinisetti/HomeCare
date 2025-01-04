@@ -106,10 +106,10 @@ const Faq = () => {
                             <div className="panel-body"> <p> We have all forms of digital payment options available. </p>
                                 <ul>
                                     <li> Cash / Cheque </li>
-                                    <li> Googlepay </li>
-                                    <li> Phonepay </li>
+                                    <li> GooglePay </li>
+                                    <li> PhonePay </li>
                                     <li> Paytm </li>
-                                    <li> Online </li>
+                                    <li> Net Banking</li>
                                 </ul>
                             </div>
                         </div>

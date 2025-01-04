@@ -4,6 +4,11 @@
     @include mobile {
         margin-bottom: 30px;
     }
+
+    h2 {
+        text-align: left;
+        margin-left: 0;
+    }
 }
 
 .carousel-item {

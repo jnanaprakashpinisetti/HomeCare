@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-import babyCareIcon from '../images/icons/baby-care.svg';
-import oldAgeCareIcon from '../images/icons/old-age-care.svg';
-import cookIcon from '../images/icons/cook.svg';
+import babyCareIcon from '../images/img/baby-care-icon.jpg';
+import oldAgeCareIcon from '../images/img/old-age-care-icon.jpg';
+import cookIcon from '../images/img/made-cook-icon.jpg';
 import physiotherapyIcon from '../images/icons/physiotherapy.svg';
 
 export default function Card() {

@@ -57,4 +57,14 @@
     h4 {
         font-size: 20px
     }
+
+    .col-md-4 {
+        &:nth-child(2) {
+            @include mobile {
+                margin-bottom: 20px;
+                margin-top: 20px;
+
+            }
+        }
+    }
 }

@@ -65,7 +65,7 @@
 
     .navbar-toggler {
         @include mobile {
-            margin-right: 10px;
+            margin-right: 20px;
             font-size: 25px;
         }
     }
@@ -110,7 +110,7 @@
             color: $blue;
 
             @include mobile {
-                color: $gray;
+                color: $white;
                 background-color: $blue;
                 // &::before {
                 //     width: 100%;

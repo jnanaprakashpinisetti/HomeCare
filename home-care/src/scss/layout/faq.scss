@@ -7,6 +7,11 @@
         }
     }
 
+    h2 {
+        color: $blue;
+        margin-bottom: 15px;
+    }
+
     .panel-group {
         max-width: 900px;
         margin: auto;
@@ -15,14 +20,19 @@
     .panel {
 
         margin-bottom: 30px;
-        box-shadow: 2px 2px 6px 0px #b3afaf78;
-        border-radius: 10px;
+        border: 1px solid #dfdfdf78;
+        border-left: 2px solid $blue;
+        border-radius: 5px;
         overflow: hidden;
+        
     }
 
     .panel-heading {
         padding: 15px;
-        background: $blue;
+        
+        &:hover {
+            background-color: #f7fbff;
+        }
 
         @include mobile {
             padding-right: 30px
@@ -33,9 +43,10 @@
         margin-bottom: 0;
 
         a {
-            color: $white;
+            color: $light-gray;
             position: relative;
             display: block;
+
 
             // &.collapsed {
             //     &::before {
@@ -48,9 +59,9 @@
                 width: 30px;
                 height: 30px;
                 position: absolute;
-                right: 15px;
-                background: $white;
-                color: $blue;
+                right: 0px;
+                background: $blue;
+                color: $white;
                 text-align: center;
                 border-radius: 50%;
                 font-size: 25px;

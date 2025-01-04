@@ -17,6 +17,12 @@ export default function Navbar() {
 		setActive(!isActive)
 	}
 
+	const closeMenu = ()=> {
+		document.querySelector(".navbar-collapse").classList.remove("show")
+		toggleClass()
+
+	}
+
 
 
 	return (
@@ -29,27 +35,28 @@ export default function Navbar() {
 					{/* </a> */}
 					<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 						<i className={isActive ? "fa fa-close" : "fa fa-bars"} onClick={toggleClass} ></i>
+						{/* <span className="navbar-toggler-icon"></span> */}
 					</button>
 					<div className="collapse navbar-collapse" id="collapsibleNavbar">
 						<ul className="navbar-nav">
 							<li className="nav-item">
-								<NavLink to='/' className="nav-link">Home </NavLink>
+								<NavLink to='/' className="nav-link" onClick={closeMenu}>Home </NavLink>
 							</li>
 							<li className="nav-item">
-								<NavLink to='About-Us' className="nav-link">About Us </NavLink>
+								<NavLink to='About-Us' className="nav-link" onClick={closeMenu}>About Us </NavLink>
 							</li>
 
 							<li className="nav-item">
-								<NavLink to='Our-services' className="nav-link"> Our Services</NavLink>
+								<NavLink to='Our-services' className="nav-link" onClick={closeMenu}> Our Services</NavLink>
 							</li>
 							<li className="nav-item">
-								<NavLink to='FAQs' className="nav-link">FAQs </NavLink>
+								<NavLink to='FAQs' className="nav-link"onClick={closeMenu} >FAQs </NavLink>
 							</li>
 							<li className="nav-item">
-								<NavLink to='Contact' className="nav-link">Contact Us </NavLink>
+								<NavLink to='Contact' className="nav-link" onClick={closeMenu}>Contact Us </NavLink>
 							</li>
 							<li className="nav-item home-care">
-								<a href='https://trades.jenceo.com/' >JenCeo - Trades</a>
+								<a href='https://trades.jenceo.com/' onClick={closeMenu}>JenCeo - Trades</a>
 							</li>
 							{/* <li className="nav-item">
 								<NavLink to='Elements' className="nav-link"> Trender Cocnut </NavLink>

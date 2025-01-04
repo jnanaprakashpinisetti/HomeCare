@@ -56,4 +56,11 @@
             }
         }
     }
+
+    .right {
+        @include mobile {
+            margin-right: 25px;
+            padding-left: 0;
+        }
+    }
 }

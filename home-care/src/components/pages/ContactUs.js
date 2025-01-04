@@ -1,6 +1,7 @@
 import React from 'react';
 
-import SendMessage from '../SendMessage'
+// import SendMessage from '../SendMessage'
+import EnquiryForm from '../EnquiryForm'
 
 import ContactImg from '../../images/img/contact-us.jpg';
 import Cell from '../../images/icons/social-media/cell-blue.svg';
@@ -86,7 +87,7 @@ const ContactUs = () => {
                     </div>
                 </div>
 
-                <SendMessage />
+                <EnquiryForm />
 
 
 

@@ -102,13 +102,13 @@ const EnquiryForm = () => {
             // Open the Thank You Modal
             setShowModal(true); // Show the modal by setting state to true
 
-            // Optional: You can call emailjs here to send the form
-            // emailjs.sendForm('service_h26i529', 'template_f2v8yqp', form.current, 'rZIjqFUg-qhiHTe32')
-            //     .then((result) => {
-            //         console.log(result.text);
-            //     }, (error) => {
-            //         console.log(error.text);
-            //     });
+            // You can call emailjs here to send the form
+            emailjs.sendForm('service_c0rlm6v', 'template_x970hts', form.current, 'kU1091UCIc-0bJ5LV')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
         } else {
             console.log("Form has errors. Please fix them.");
         }

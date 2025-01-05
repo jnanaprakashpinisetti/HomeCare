@@ -7,44 +7,122 @@ import contactUs from '../images/img/contact-us-2.jpg'
 const EnquiryForm = () => {
     const form = useRef();
     const [firstName, setFirstName] = useState("");
-    const [secondtName, setSecondName] = useState("");
+    const [secondName, setSecondName] = useState("");
     const [email, setEmail] = useState("");
     const [mobile, setMobile] = useState("");
     const [message, setMessage] = useState("");
 
-    const [error, setErro] = useState({
-        firstName :"",
-        secondtName :"",
-        email :"",
-        mobile :"",
-        message :""
+    const [error, setError] = useState({
+        firstName: "",
+        secondName: "",
+        email: "",
+        mobile: "",
+        message: ""
     });
 
-    const submitForm = e => {
-        e.preventDefault();
-        if(firstName.trim()==="") {
-            setErro({...error, firstName:"Enter First Name"})
-        }else {
-            setErro({...error, firstName:""})
-        }
-        
-    }
+    // Modal State
+    const [showModal, setShowModal] = useState(false);
 
-    const submitHandler = e => {
+    // Function to clear error when user starts typing
+    const clearError = (field) => {
+        setError((prevState) => ({
+            ...prevState,
+            [field]: ""
+        }));
+    };
+
+    // Email Validation Regex
+    const validateEmail = (email) => {
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return emailRegex.test(email);
+    };
+
+    // Mobile Number Validation (10 digits)
+    const validateMobile = (mobile) => {
+        const mobileRegex = /^[0-9]{10}$/;
+        return mobileRegex.test(mobile);
+    };
+
+    const submitHandler = (e) => {
         e.preventDefault();
-        // emailjs.sendForm('service_91qxp92', 'template_62xk6sf', form.current, 'rZIjqFUg-qhiHTe32')
-        emailjs.sendForm('service_h26i529', 'template_f2v8yqp', form.current, 'rZIjqFUg-qhiHTe32')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-        e.target.reset();
-    }
+
+        let formIsValid = true;
+        let newErrors = { ...error };
+
+        // First Name validation
+        if (firstName.trim() === "") {
+            newErrors.firstName = "Enter First Name";
+            formIsValid = false;
+        } else {
+            newErrors.firstName = "";
+        }
+
+        // Email validation
+        if (email.trim() === "") {
+            newErrors.email = "Enter Email";
+            formIsValid = false;
+        } else if (!validateEmail(email)) {
+            newErrors.email = "Please enter a valid email address";
+            formIsValid = false;
+        } else {
+            newErrors.email = "";
+        }
+
+        // Mobile validation
+        if (mobile.trim() === "") {
+            newErrors.mobile = "Enter Mobile Number";
+            formIsValid = false;
+        } else if (!validateMobile(mobile)) {
+            newErrors.mobile = "Mobile number must be 10 digits";
+            formIsValid = false;
+        } else {
+            newErrors.mobile = "";
+        }
+
+
+        setError(newErrors);
+
+        // Reset the form
+        const handleReset = () => {
+            setFirstName('');
+            setSecondName('');
+            setEmail('');
+            setMobile('');
+            setMessage('');
+        };
+
+        // If form is valid, submit the form
+        if (formIsValid) {
+            console.log("Form is valid! Sending data...");
+
+            // Reset the form
+            form.current.reset();
+            handleReset()
+
+            // Open the Thank You Modal
+            setShowModal(true); // Show the modal by setting state to true
+
+            // Optional: You can call emailjs here to send the form
+            // emailjs.sendForm('service_h26i529', 'template_f2v8yqp', form.current, 'rZIjqFUg-qhiHTe32')
+            //     .then((result) => {
+            //         console.log(result.text);
+            //     }, (error) => {
+            //         console.log(error.text);
+            //     });
+        } else {
+            console.log("Form has errors. Please fix them.");
+        }
+    };
+
+    // Handle OK button click in the modal to close it
+    const handleOkClick = () => {
+        setShowModal(false); // Close the modal when OK is clicked
+    };
+
     return (
         <>
             <section className="enquiryForm">
-                <div className="container ">
+                <div className="container">
 
                     <div className="row">
                         <div className="col-md-4">
@@ -53,74 +131,138 @@ const EnquiryForm = () => {
                         <div className="col-md-8">
                             <h1 className="section-heading"> <span className="blue">send your </span><span className="yellow">message to us</span></h1>
 
-
                             <div className="form-wrapper">
-                                {/* <form ref={form} onSubmit={submitHandler} id='enquiryForm'> */}
-                                <form ref={form} onSubmit={submitForm} id='enquiryForm'>
-                                    {/* Blick-1 */}
+                                <form ref={form} onSubmit={submitHandler} id='enquiryForm'>
+                                    {/* Block-1 */}
                                     <div className="container">
                                         <div className="row">
                                             {/* First Name */}
                                             <div className="col-md-6 form-group">
                                                 <label htmlFor="firstName"><span>* </span>First Name :</label>
-                                                <input type="text" className='form-control' id='firstName' name='firstName' placeholder="Enter First Name" required value={firstName} onChange={(e)=>{setFirstName(e.target.value)}}/>
-                                                {/* <span className='error' id='firstNameError'></span> */}
-                                                {error.firstName && <span>{error.firstName}</span>}
+                                                <input
+                                                    type="text"
+                                                    className='form-control'
+                                                    id='firstName'
+                                                    name='firstName'
+                                                    placeholder="Enter First Name"
+                                                    value={firstName}
+                                                    onChange={(e) => {
+                                                        setFirstName(e.target.value);
+                                                        clearError("firstName");
+                                                    }}
+                                                />
+                                                {error.firstName && <span className='error'>{error.firstName}</span>}
                                             </div>
                                             {/* Last Name */}
                                             <div className="col-md-6 form-group">
-                                                <label htmlFor="lastName">Last Name :</label>
-                                                <input type="text" className='form-control' id='lastName' name='lastName' placeholder="Enter Last Name" />
-                                                <span className='error' id='lastNameError'></span>
+                                                <label htmlFor="secondName">Last Name :</label>
+                                                <input
+                                                    type="text"
+                                                    className='form-control'
+                                                    id='secondName'
+                                                    name='secondName'
+                                                    placeholder="Enter Last Name"
+                                                    value={secondName}
+                                                    onChange={(e) => {
+                                                        setSecondName(e.target.value);
+                                                        clearError("secondName");
+                                                    }}
+                                                />
+                                                {error.secondName && <span className='error'>{error.secondName}</span>}
                                             </div>
-
                                         </div>
                                     </div>
 
-                                    {/* Blick-2 */}
+                                    {/* Block-2 */}
                                     <div className="container">
                                         <div className="row">
                                             {/* Email */}
                                             <div className="col-md-6 form-group">
                                                 <label htmlFor="email"><span>* </span>Email Id :</label>
-                                                <input type="email" className='form-control' id='email' name='email' placeholder="sample@mail.com" required />
-                                                <span className='error' id='emailError'></span>
+                                                <input
+                                                    type="email"
+                                                    className='form-control'
+                                                    id='email'
+                                                    name='email'
+                                                    placeholder="sample@mail.com"
+                                                    value={email}
+                                                    onChange={(e) => {
+                                                        setEmail(e.target.value);
+                                                        clearError("email");
+                                                    }}
+                                                />
+                                                {error.email && <span className='error'>{error.email}</span>}
                                             </div>
                                             {/* Mobile No */}
                                             <div className="col-md-6 form-group">
                                                 <label htmlFor="mobile"><span>* </span>Mobile No :</label>
-                                                <input type="number" className='form-control' id='mobile' name='mobile' placeholder="Enter Mobile No" required />
-                                                <span className='error' id='mobileError'></span>
+                                                <input
+                                                    type="number"
+                                                    className='form-control'
+                                                    id='mobile'
+                                                    name='mobile'
+                                                    placeholder="Enter Mobile No"
+                                                    value={mobile}
+                                                    onChange={(e) => {
+                                                        setMobile(e.target.value);
+                                                        clearError("mobile");
+                                                    }}
+                                                />
+                                                {error.mobile && <span className='error'>{error.mobile}</span>}
                                             </div>
-
                                         </div>
                                     </div>
 
-                                    {/* Blick-3 */}
+                                    {/* Block-3 */}
                                     <div className="container">
                                         <div className="row">
-                                            {/* Comments */}
+                                            {/* Message */}
                                             <div className="col-md-12 form-group">
                                                 <label htmlFor="message">Message :</label>
-                                                <textarea className='form-control' name="message" id="message" cols="10" rows="5" placeholder="Enter your message..."></textarea>
-                                                <span className='error' id="messageError"></span>
+                                                <textarea
+                                                    className='form-control'
+                                                    name="message"
+                                                    id="message"
+                                                    cols="10"
+                                                    rows="5"
+                                                    placeholder="Enter your message..."
+                                                    value={message}
+                                                    onChange={(e) => {
+                                                        setMessage(e.target.value);
+                                                        clearError("message");
+                                                    }}
+                                                ></textarea>
+                                                {error.message && <span className='error'>{error.message}</span>}
                                             </div>
-
                                         </div>
                                     </div>
+
                                     <div className="btn-wrap">
-                                        {/* <button type="submit" className="btn btn-primary" data-toggle="modal" data-target="#myModal" >Submit</button> */}
-                                        <button type="submit" className="btn btn-primary"  >Submit</button>
+                                        <button type="submit" className="btn btn-primary">Submit</button>
                                     </div>
 
-
                                 </form>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <ThankYouModal />
+
+                {/* Thank You Modal */}
+                <div className={`modal ${showModal ? 'show' : ''}`} id="thankYouModal" tabIndex="-1" aria-labelledby="thankYouModalLabel" aria-hidden={!showModal}>
+                    <div className="modal-dialog">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="thankYouModalLabel">Thank You</h5>
+                            </div>
+                            <div className="modal-body">
+                                Your enquiry has been successfully submitted. We appreciate your interest and will get back to you as soon as possible.
+                            </div>
+                            <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" onClick={handleOkClick}>OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </section>
         </>

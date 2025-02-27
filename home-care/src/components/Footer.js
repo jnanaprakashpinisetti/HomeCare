@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Router, Routes, Route, Link, NavLink, browserHistory, IndexRoute } from 'react-router-dom';
 
 import facebook from '../images/icons/social-media/facebook.svg';
 import twitter from '../images/icons/social-media/twitter.svg';
@@ -8,8 +9,27 @@ import email from '../images/icons/social-media/email.svg';
 import location from '../images/icons/social-media/location.svg';
 import youtube from '../images/icons/social-media/youtube.svg';
 
-
 export default function Footer() {
+
+  // Function to scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Optional: Adds smooth scrolling
+    });
+  };
+
+  const [isActive, setActive] = useState(false);
+  const toggleClass = () => {
+    setActive(!isActive)
+    scrollToTop()
+  }
+
+  const closeMenu = () => {
+    document.querySelector(".navbar-collapse").classList.remove("show")
+    toggleClass()
+
+  }
   return (
     <>
       <footer>
@@ -19,11 +39,11 @@ export default function Footer() {
               <div className="col-md-2">
                 <h4> Links</h4>
                 <ul>
-                  <li>Home</li>
-                  <li>About Us</li>
-                  <li>Our Services</li>
-                  <li>FAQ</li>
-                  <li>Contact Us</li>
+                  <NavLink to='/' className="nav-link" onClick={closeMenu}>Home </NavLink>
+                  <NavLink to='About-Us' className="nav-link" onClick={closeMenu}>About Us </NavLink>
+                  <NavLink to='Our-services' className="nav-link" onClick={closeMenu}> Our Services</NavLink>
+                  <NavLink to='FAQs' className="nav-link" onClick={closeMenu} >FAQs </NavLink>
+                  <NavLink to='Contact' className="nav-link" onClick={closeMenu}>Contact Us </NavLink>
                 </ul>
               </div>
               <div className="col-md-3">

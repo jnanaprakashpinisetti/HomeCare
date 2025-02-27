@@ -12,9 +12,18 @@ import Elements from './Elements/Elements';
 
 
 export default function Navbar() {
+ // Function to scroll to the top of the page
+ const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Optional: Adds smooth scrolling
+    });
+  };
+
 	const [isActive, setActive] = useState(false);
 	const toggleClass = () => {
-		setActive(!isActive)
+		setActive(!isActive);
+		scrollToTop()
 	}
 
 	const closeMenu = ()=> {

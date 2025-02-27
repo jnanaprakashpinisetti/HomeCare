@@ -22,7 +22,7 @@
 
     @include mobile-tab {
         background-image: none !important;
-        background-color: #f7eee5;
+        background-color: #D1F2FB;
     }
 
     .innet-text {
@@ -34,7 +34,7 @@
         transform: translateY(-50%)
         }
         @include mobile-tab {
-            padding: 30px 20px 0 20px;
+            padding: 40px 20px 15px 20px;
         }
     }
 }
@@ -44,13 +44,21 @@
 }
 
 .carousel-1 {
-    background-image: url(../../images/carousal/cook.jpg)
+    background-image: url(../../images/carousal/nursing.jpg)
 }
 
 .carousel-2 {
-    background-image: url(../../images/carousal/baby-care.jpg)
+    background-image: url(../../images/carousal/patient-care.jpg)
 }
 
 .carousel-3 {
     background-image: url(../../images/carousal/old-age-care.jpg)
+}
+
+.carousel-4 {
+    background-image: url(../../images/carousal/baby-care.jpg)
+}
+
+.carousel-5 {
+    background-image: url(../../images/carousal/cook.jpg)
 }

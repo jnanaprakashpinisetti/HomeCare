@@ -1,8 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import ThankYouModal from './ThankYouModal'
-
-import contactUs from '../images/img/contact-us-2.jpg'
+import ThankYouModal from './ThankYouModal';
+import contactUs from '../images/img/contact-us-2.jpg';
 
 const EnquiryForm = () => {
     const form = useRef();
@@ -11,13 +10,17 @@ const EnquiryForm = () => {
     const [email, setEmail] = useState("");
     const [mobile, setMobile] = useState("");
     const [message, setMessage] = useState("");
+    const [serviceType, setServiceType] = useState("");
+    const [servicePeriod, setServicePeriod] = useState("");
 
     const [error, setError] = useState({
         firstName: "",
         secondName: "",
         email: "",
         mobile: "",
-        message: ""
+        message: "",
+        serviceType: "",
+        servicePeriod: ""
     });
 
     // Modal State
@@ -79,17 +82,16 @@ const EnquiryForm = () => {
             newErrors.mobile = "";
         }
 
+        // Service Type validation
+        if (serviceType.trim() === "") {
+            newErrors.serviceType = "Select Service Type";
+            formIsValid = false;
+        } else {
+            newErrors.serviceType = "";
+        }
 
+        // Update the error state
         setError(newErrors);
-
-        // Reset the form
-        const handleReset = () => {
-            setFirstName('');
-            setSecondName('');
-            setEmail('');
-            setMobile('');
-            setMessage('');
-        };
 
         // If form is valid, submit the form
         if (formIsValid) {
@@ -97,12 +99,18 @@ const EnquiryForm = () => {
 
             // Reset the form
             form.current.reset();
-            handleReset()
+            setFirstName('');
+            setSecondName('');
+            setEmail('');
+            setMobile('');
+            setMessage('');
+            setServiceType('');
+            setServicePeriod('');
 
             // Open the Thank You Modal
-            setShowModal(true); // Show the modal by setting state to true
+            setShowModal(true);
 
-            // You can call emailjs here to send the form
+            // Send the form using emailjs
             emailjs.sendForm('service_c0rlm6v', 'template_x970hts', form.current, 'kU1091UCIc-0bJ5LV')
                 .then((result) => {
                     console.log(result.text);
@@ -116,20 +124,22 @@ const EnquiryForm = () => {
 
     // Handle OK button click in the modal to close it
     const handleOkClick = () => {
-        setShowModal(false); // Close the modal when OK is clicked
+        setShowModal(false);
     };
 
     return (
         <>
             <section className="enquiryForm">
                 <div className="container">
-
                     <div className="row">
                         <div className="col-md-4">
                             <img src={contactUs} alt="contact Us" />
                         </div>
                         <div className="col-md-8">
-                            <h1 className="section-heading"> <span className="blue">send your </span><span className="yellow">Enquiry  to us</span></h1>
+                            <h1 className="section-heading">
+                                <span className="blue">send your </span>
+                                <span className="yellow">Enquiry to us</span>
+                            </h1>
 
                             <div className="form-wrapper">
                                 <form ref={form} onSubmit={submitHandler} id='enquiryForm'>
@@ -213,7 +223,51 @@ const EnquiryForm = () => {
                                         </div>
                                     </div>
 
-                                    {/* Block-3 */}
+                                    <div className="container">
+                                        <div className="row">
+                                            {/* Service Type */}
+                                            <div className="col-md-6 form-group">
+                                                <label htmlFor="serviceType"><span>* </span>Select the Service</label>
+                                                <select
+                                                    id='serviceType'
+                                                    className="form-select"
+                                                    name="serviceType" // Add name attribute
+                                                    value={serviceType}
+                                                    onChange={(e) => {
+                                                        setServiceType(e.target.value);
+                                                        clearError("serviceType");
+                                                    }}
+                                                >
+                                                    <option value="">Select the Service</option>
+                                                    <option value="Nursing">Nursing</option>
+                                                    <option value="Patient Care">Patient Care</option>
+                                                    <option value="Child Care">Child Care</option>
+                                                    <option value="Cook">Cook</option>
+                                                    <option value="Supporting">Supporting</option>
+                                                    <option value="Others">Others</option>
+                                                </select>
+                                                {error.serviceType && <span className='error'>{error.serviceType}</span>}
+                                            </div>
+                                            {/* Service Period */}
+                                            <div className="col-md-6 form-group">
+                                                <label htmlFor="servicePeriod">Service Period :</label>
+                                                <input
+                                                    type="text"
+                                                    className='form-control'
+                                                    id='servicePeriod'
+                                                    name='servicePeriod' // Add name attribute
+                                                    placeholder="Enter Service Period"
+                                                    value={servicePeriod}
+                                                    onChange={(e) => {
+                                                        setServicePeriod(e.target.value);
+                                                        clearError("servicePeriod");
+                                                    }}
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Block-4 */}
                                     <div className="container">
                                         <div className="row">
                                             {/* Message */}
@@ -240,7 +294,6 @@ const EnquiryForm = () => {
                                     <div className="btn-wrap">
                                         <button type="submit" className="btn btn-primary">Submit</button>
                                     </div>
-
                                 </form>
                             </div>
                         </div>
@@ -263,10 +316,9 @@ const EnquiryForm = () => {
                         </div>
                     </div>
                 </div>
-
             </section>
         </>
     );
-}
+};
 
 export default EnquiryForm;

@@ -129,7 +129,7 @@ const EnquiryForm = () => {
                             <img src={contactUs} alt="contact Us" />
                         </div>
                         <div className="col-md-8">
-                            <h1 className="section-heading"> <span className="blue">send your </span><span className="yellow">message to us</span></h1>
+                            <h1 className="section-heading"> <span className="blue">send your </span><span className="yellow">Enquiry  to us</span></h1>
 
                             <div className="form-wrapper">
                                 <form ref={form} onSubmit={submitHandler} id='enquiryForm'>

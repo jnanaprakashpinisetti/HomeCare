@@ -40,6 +40,10 @@ body {
     margin: 0 auto 40px;
     font-family: $roboto-bl;
 
+    @include mobile {
+        margin-bottom: 15px;
+    }
+
     &::before {
         content: "";
         height: 2px;

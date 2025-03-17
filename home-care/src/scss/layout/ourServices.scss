@@ -2,8 +2,17 @@
     .hero-banner {
         background-image: url(../../images/img/services.jpg);
         @include mobile {
-            background-image: url(../../images/img/services-mobile.jpg);
+            // background-image: url(../../images/img/services-mobile.jpg);
+            background: none;
+            height: auto;
 
+        }
+        .visable-mobile {
+            display: none;
+            @include mobile {
+                display: block;
+
+            }
         }
     }
 

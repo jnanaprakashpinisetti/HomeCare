@@ -6,6 +6,7 @@ import oldAgeCare from '../../images/img/old-age-care.jpg';
 import physotherophy from '../../images/img/physotherophy.jpg';
 import patentCare from '../../images/img/patent-care.jpg';
 import officeCleaing from '../../images/img/office-cleaning.jpg';
+import serviceMobileHero from '../../images/img/services-mobile.jpg'
 
 const OurServices = () => {
     return (
@@ -18,7 +19,10 @@ const OurServices = () => {
                            
                             <h5>We provide baby care, old-age care, cooking, physiotherapy, and office cleaning services at the best price and with high quality.</h5>
                         </div>
-                        <div className="col-md-6"></div>
+                        <div className="col-md-6 visable-mobile">
+                            <img src={serviceMobileHero} alt='jenceo services'/>
+
+                        </div>
                     </div>
                 </div>
             </div>

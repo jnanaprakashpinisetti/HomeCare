@@ -13,7 +13,7 @@ function App() {
       <TopNav />
       <HashRouter>
         <Navbar />
-      <Footer />
+        <Footer />
       </HashRouter>
 
 

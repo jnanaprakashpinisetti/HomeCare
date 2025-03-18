@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import cook from '../../images/img/cook-maid.jpg';
 import babyCare from '../../images/img/baby-care.jpg';
@@ -8,8 +8,13 @@ import patentCare from '../../images/img/patent-care.jpg';
 import officeCleaing from '../../images/img/office-cleaning.jpg';
 import serviceMobileHero from '../../images/img/services-mobile.jpg'
 import Watsapp from '../Watsapp';
+import ReactGA from 'react-ga';
 
 const OurServices = () => {
+        useEffect(() => {
+            ReactGA.pageview(window.location.pathname)
+        }, [])
+    
     return (
         <div className="services">
             <Watsapp/>

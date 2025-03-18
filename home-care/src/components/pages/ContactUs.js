@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 // import SendMessage from '../SendMessage'
 import EnquiryForm from '../EnquiryForm'
@@ -8,9 +8,13 @@ import Cell from '../../images/icons/social-media/cell-blue.svg';
 import Email from '../../images/icons/social-media/email-blue.svg';
 import Location from '../../images/icons/social-media/location-blue.svg';
 import watsapp from '../../images/icons/social-media/watsapp-blue.svg';
+import ReactGA from 'react-ga';
 import Watsapp from '../Watsapp';
 
 const ContactUs = () => {
+        useEffect(() => {
+            ReactGA.pageview(window.location.pathname)
+        }, [])
     return (
         <>
         <Watsapp/>

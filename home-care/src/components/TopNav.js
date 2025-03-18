@@ -26,7 +26,7 @@ const TopNav = () => {
                     </div>
                     <div className="col-md-6 right">
                         <ul>
-                            <li><a href="tell:9888559955"><img src={cell} alt="call icon" />9888 559955</a></li>
+                            <li><a href="tell:9888559955"><img src={cell} alt="call icon" />9888 55 99 55</a></li>
                             <li><a href="mailto:jenceocustomercare@gmail.com"><img src={email} alt="email icon" />jenceocustomercare@gmail.com</a></li>
                         </ul>
                     </div>

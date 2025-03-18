@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import EnquiryForm from '../EnquiryForm';
 import Watsapp from '../Watsapp';
+import ReactGA from 'react-ga';
 
 const Faq = () => {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname)
+    }, [])
+
     return (
         <div className="faq">
             <Watsapp/>

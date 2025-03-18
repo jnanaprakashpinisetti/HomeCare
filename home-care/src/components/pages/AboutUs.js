@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import aboutUs from '../../images/img/about-us-2.jpg';
 import Watsapp from '../Watsapp';
+import ReactGA from 'react-ga';
 
 const AboutUs = () => {
+        useEffect(() => {
+            ReactGA.pageview(window.location.pathname)
+        }, [])
     return (
         <div className="about-us mt-80">
               <Watsapp/>

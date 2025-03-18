@@ -15,13 +15,13 @@ const TopNav = () => {
                 <div className="row">
                     <div className="col-md-6 left">
 
-                        <ul className="socilaMedia">
+                        {/* <ul className="socilaMedia">
                             <li><a href="#">follow us: </a></li>
                             <li><a href="https://www.facebook.com/profile.php?id=100093798434010" target="_blank" rel="noreferrer" > <img src={facebook} alt="facebook" /></a></li>
                             <li><a href="https://twitter.com/JenCeoHomeCare" target="_blank"   rel="noreferrer"><img src={twitter} alt="twitter" /></a></li>
                             <li><a href="https://www.instagram.com/jenceohomecare/" target="_blank"  rel="noreferrer" ><img src={instagram} alt="instagram" /></a></li>
                             <li><a href="https://www.youtube.com/@JenCeo-hz3gn" target="_blank"  rel="noreferrer" ><img src={youtube} alt="youtube" /></a></li>
-                        </ul>
+                        </ul> */}
 
                     </div>
                     <div className="col-md-6 right">

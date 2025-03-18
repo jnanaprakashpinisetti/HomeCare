@@ -16,7 +16,7 @@ export default function Choose() {
                     <div className="row">
                         <div className="col-md-6">
                             <div className="img-wrap">
-                                <img src={expertIcon} alt="" />
+                                <img src={expertIcon} alt="Expert icon" />
                             </div>
                             <div className="info-wrap">
                                 <h4>Get Professionals at Your Door-Step</h4>
@@ -29,7 +29,7 @@ export default function Choose() {
 
                         <div className="col-md-6">
                             <div className="img-wrap">
-                                <img src={customerIcon} alt="" />
+                                <img src={customerIcon} alt="Customer icon" />
                             </div>
                             <div className="info-wrap">
                                 <h4>Customer satisfaction</h4>
@@ -42,7 +42,7 @@ export default function Choose() {
                     <div className="row">
                         <div className="col-md-6">
                             <div className="img-wrap">
-                                <img src={standerdIcon} alt="" />
+                                <img src={standerdIcon} alt="standerd icon" />
                             </div>
                             <div className="info-wrap">
                                 <h4>Highest Standards in Quality Assurance</h4>
@@ -52,7 +52,7 @@ export default function Choose() {
 
                         <div className="col-md-6">
                             <div className="img-wrap">
-                                <img src={customerCareIcon} alt="" />
+                                <img src={customerCareIcon} alt="customer care icon" />
                             </div>
                             <div className="info-wrap">
                                 <h4>24 / 7 Customer support</h4>

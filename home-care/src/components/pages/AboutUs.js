@@ -1,10 +1,12 @@
 import React from 'react';
 
 import aboutUs from '../../images/img/about-us-2.jpg';
+import Watsapp from '../Watsapp';
 
 const AboutUs = () => {
     return (
         <div className="about-us mt-80">
+              <Watsapp/>
             <div className="hero-banner">
                 <div className="container">
                     <div className="row">

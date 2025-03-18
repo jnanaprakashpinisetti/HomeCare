@@ -8,11 +8,14 @@ import Cell from '../../images/icons/social-media/cell-blue.svg';
 import Email from '../../images/icons/social-media/email-blue.svg';
 import Location from '../../images/icons/social-media/location-blue.svg';
 import watsapp from '../../images/icons/social-media/watsapp-blue.svg';
+import Watsapp from '../Watsapp';
 
 const ContactUs = () => {
     return (
         <>
+        <Watsapp/>
             <section className="contact-us">
+
                 <div className="hero-banner mt-80">
 
                     <div className="container">

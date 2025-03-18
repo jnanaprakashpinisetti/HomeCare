@@ -7,10 +7,12 @@ import physotherophy from '../../images/img/physotherophy.jpg';
 import patentCare from '../../images/img/patent-care.jpg';
 import officeCleaing from '../../images/img/office-cleaning.jpg';
 import serviceMobileHero from '../../images/img/services-mobile.jpg'
+import Watsapp from '../Watsapp';
 
 const OurServices = () => {
     return (
         <div className="services">
+            <Watsapp/>
             <div className="hero-banner mt-80">
                 <div className="container">
                     <div className="row">

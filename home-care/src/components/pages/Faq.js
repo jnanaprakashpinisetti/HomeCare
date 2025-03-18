@@ -1,9 +1,12 @@
 import React from 'react';
 import EnquiryForm from '../EnquiryForm';
+import Watsapp from '../Watsapp';
 
 const Faq = () => {
     return (
         <div className="faq">
+            <Watsapp/>
+            
             <div className="hero-banner mt-80">
                 <div className="container">
                     <div className="row">

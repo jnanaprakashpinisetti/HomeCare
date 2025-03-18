@@ -75,7 +75,7 @@ export default function Footer() {
                 <h4>Contact Us</h4>
                 <div className="contact-us">
                   <ul>
-                    <li> <a href='tell:9888559955' className="call"><img src={cell} alt="location" />9888 559955</a></li>
+                    <li> <a href='tell:9888559955' className="call"><img src={cell} alt="location" />9888 55 99 55</a></li>
                     <li><a href='mailto:jenceocustomercare@gmail.com'><img src={email} alt="location" />jenceocustomercare@gmail.com</a></li>
                     <li className="address">
                       <img src={location} alt="location" /> <span>#2-3-381, Road No.4, Sainagar Colony, Alkapuri X Road, Nagole, Hyderabad Telangana (India), Pin - 500 068</span>

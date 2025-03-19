@@ -45,8 +45,9 @@ h4 {
 h5 {
     font-size: 20px;
     line-height: normal;
-    font-family: $roboto-m;
+    font-family: $roboto;
     color: $brand-gray;
+    font-weight: normal;
 
     @include mobile {
         font-size: 18px

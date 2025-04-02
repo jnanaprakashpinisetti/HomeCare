@@ -17,7 +17,9 @@
     transition: all 1s;
 
     @include mobile {
-        margin-bottom: 20px
+        margin-bottom: 20px;
+        height: auto;
+
     }
 
     &:hover {

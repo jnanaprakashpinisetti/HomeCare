@@ -78,7 +78,7 @@ export default function Footer() {
                     <li> <a href='tell:9888559955' className="call"><img src={cell} alt="location" />9888 55 99 55</a></li>
                     <li><a href='mailto:jenceocustomercare@gmail.com'><img src={email} alt="location" />jenceocustomercare@gmail.com</a></li>
                     <li className="address">
-                      <img src={location} alt="location" /> <span>#2-3-381, Road No.4, Sainagar Colony, Alkapuri X Road, Nagole, Hyderabad Telangana (India), Pin - 500 068</span>
+                      <img src={location} alt="location" /> <span>#15-102/47/A Road Number 6 Vandhanapuri Colony, Ameenpur Village, Phase-1, Hyderabad, Telangana (India), Pin - 502 032</span>
                     </li>
                   </ul>
                 </div>

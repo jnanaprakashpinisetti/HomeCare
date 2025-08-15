@@ -107,6 +107,15 @@ const Home = () => {
             {/* <SendMessage /> */}
             <EnquiryForm />
 
+                     <div className='container map'>
+                    <div className="row">
+                        <div className="col-md-12">
+                              <h2>Our Location</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.69729562386!2d78.29143277622855!3d17.521957598912334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb98cbd24f037b%3A0xde9386f2938cfadb!2sJenCeo!5e0!3m2!1sen!2sin!4v1755257374294!5m2!1sen!2sin" width="100%" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
         </>
     );
 }

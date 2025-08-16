@@ -111,7 +111,8 @@ const AboutUs = () => {
             </div>
 
             <div className="container">
-                        <h2>About Us – Inspired by Greatness, Guided by Values</h2>
+                        <h2>Inspired by Greatness, Guided by Values</h2>
+                        <br></br>
                 <div className="row">
                     <div className="col-sm-12">
                         <p>At <strong>JenCeo</strong>, we don’t just provide home care services—we build relationships rooted in trust, compassion, and integrity. Our foundation is inspired by the timeless wisdom of three legendary visionaries: <strong>Sri Ratan Tata, Dr. APJ Abdul Kalam</strong>, and <strong>Swami Vivekananda</strong>. Their teachings guide us in delivering care that goes beyond duty, embracing <strong>moral values, ethical service</strong>, and the universal <strong>law of karma</strong>.</p>
@@ -127,6 +128,7 @@ const AboutUs = () => {
             {/* Ratan Tata Ji */}
             <div className='container'>
                 <h3>Inspired by Ratan Tata – Compassion in Action</h3>
+                <br></br>
                 <div className='row'>
                     <div className='col-sm-3'>
                         <img src={ratanTata} alt="ratanTata" />
@@ -176,6 +178,7 @@ const AboutUs = () => {
 
             <div className='container'>
                 <h3>Rooted in Swami Vivekananda’s Wisdom – The Law of Karma</h3>
+                <br></br>
                 <div className='row'>
                     <div className='col-sm-3'>
                         <img src={swamiVivekanandh} alt="swami Vivekanandh" />

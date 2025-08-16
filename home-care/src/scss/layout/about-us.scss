@@ -13,4 +13,12 @@
             margin-bottom: 0
         }
     }
+
+    .col-sm-3 {
+        img {
+            @include mobile {
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
